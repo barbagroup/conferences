@@ -15,22 +15,22 @@
 Washington, DC, 20052, United-States\\
 e-mail: mesnardo@gwu.edu, web page: lorenabarba.com}
 
-\keywords{Immersed Boundary Method, PETSc, Parallel CFD application, Flying Snake}
+\keywords{Immersed Boundary Method, PETSc, flying snake}
 
-\abstract{An open-source \texttt{PETSc}-based immersed boundary method code is implemented to solve the three-dimensional flow over a cylinder with accurate cross-sectional shape of the flying snake species \textit{Chrysopelea paradisi}. We use a projection approach of the immersed boundary method to analyse vorticity structures in the wake and explain the enhanced lift generation of the snake at a particular angle of attack.}
+\abstract{A new, open-source \texttt{PETSc}-based immersed boundary method code is under development that uses a fully discrete projection formulation. Its initial purpose is to study the three-dimensional flow around an accurate cross-sectional shape of the flying snake species \textit{Chrysopelea paradisi}. We analyze vorticity structures in the wake and explain the enhanced lift generation of the snake at a particular angle of attack.}
 
 \begin{document}
 \maketitle
 
 \section{IMMERSED BOUNDARY METHOD}
 
-Immersed boundary methods form a class of techniques in computational fluid dynamics particularly useful to simulate flows over complex and moving geometries, where an immersed boundary is represented by a collection of Lagrangian points that do not coincide with the Eulerian grid nodes. Thus, simple structured Cartesian meshes covering the entire physical domain (including the solid region) can be used, requiring low memory storage. The governing equations are solved over the whole domain so that boundary conditions on the immersed surface need to be incorporated in a different manner.
+Immersed boundary methods (IBM) form a class of techniques in computational fluid dynamics where an immersed boundary is represented by a collection of Lagrangian points that do not coincide with the Eulerian grid nodes. They are particularly useful to simulate flows over complex and moving geometries. Simple, structured Cartesian meshes covering the entire physical domain (including the solid region) can be used, requiring low memory storage. The governing equations are solved over the whole domain and the key is finding a way to incorporate the boundary conditions on the immersed surface.
 
-We use the method proposed by Taira and Colonius \cite{Taira_Colonius_2007} in which the momentum equations are augmented by a forcing term that acts as a Lagrange multiplier to bring the fluid to rest in the vicinity of the body surface. The fully-discrete modified Navier-Stokes equations produce an algebraic system  that is solved via a projection method by performing a block LU decomposition \cite{Perot_1993}.
+We use the method proposed by Taira and Colonius \cite{Taira_Colonius_2007} in which the momentum equations are augmented by a forcing term that acts as a Lagrange multiplier to bring the fluid to rest in the vicinity of the body surface. The fully-discrete modified Navier-Stokes equations produce an algebraic system that is solved via a projection method by performing a block LU decomposition \cite{Perot_1993}.
 
 \section{PETIBM}
 
-We have implemented the immersed boundary projection method using the open-source library \texttt{PETSc} \cite{PETSc_webpage_2014} that provides efficient data structures and routines to solve partial differential equations on multi-CPUs. The \texttt{PETSc} data structure \textit{distributed array} allows us to perform a logically Cartesian decomposition, such that nodal values spatially-closed in the physical domain are stored on the same process, thus, minimizing communications when using finite-difference stencils. Explicit terms of the Navier-Stokes system are stored using \textit{local vectors} that include ghost-cell values while \textit{global vectors} are used in sparse linear algebra routines.
+We use the open-source library \texttt{PETSc} \cite{PETSc_webpage_2014} to build the IBM code, taking advantage of its efficient data structures and routines to solve partial differential equations on multi-CPUs. The \texttt{PETSc} data structure \textit{distributed array} allows us to perform a logically Cartesian decomposition, such that nodal values spatially close in the physical domain are stored on the same process, thus, minimizing communications when using finite-difference stencils. Explicit terms of the Navier-Stokes system are stored using \textit{local vectors} that include ghost-cell values while \textit{global vectors} are used in sparse linear algebra routines.
 
 The full code, named \texttt{PetIBM}, is open-source, released under an MIT License and hosted on the version-controlled platform GitHub \cite{PetIBM}.
 
