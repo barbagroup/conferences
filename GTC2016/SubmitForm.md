@@ -31,7 +31,7 @@ All
 ## Session Description
 ------------------------
 
-We show how to apply AmgX–NVIDIA's experimental library of multi-GPU linear solvers and multigrid preconditioners–to accelerate existing PETSc applications using a wrapper we have developed. With AmgX and this wrapper, programmers can accelerate their existing PETSc applications by adding fewer than 10 lines to their codes. An example using PetIBM–our PETSc-based scalable immersed boundary CFD solver–demonstrates how AmgX can immediately speed up an application and shows how multi-GPU capability can be used for large-scale 3D CFD simulations. This speed-up reduces execution time, lowering computational expense. We demonstrate potential savings using Amazon AWS clusters as an example. We also present performance benchmarks of AmgX and tips for optimizing multigrid preconditioners on GPUs. This presentation is co-authored with Professor Lorena Barba.
+Learn to accelerate existing PETSc applications using AmgX–NVIDIA's library of multi-GPU linear solvers and multigrid preconditioners. We developed wrapper code coupling AmgX and PETSC, allowing programmers to use it with fewer than 10 additional lines of code. Using PetIBM, our PETSc-based immersed-boundary CFD solver, we show how AmgX can speed up an application with little programming effort. AmgX thus can bring multi-GPU capability to large-scale 3D CFD simulations, reducing execution time and lowering hardware costs. As an example, we estimated the potential cost savings using Amazon AWS compute cloud. We also present performance benchmarks of AmgX, and tips for optimizing GPU multigrid preconditioners for CFD. This presentation is co-authored with Professor Lorena A. Barba.
 
 ## Extended Abstract & Results
 ------------------------
