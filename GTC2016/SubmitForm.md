@@ -24,7 +24,6 @@ All
 
 * Computational Fluid Dynamics
 * Supercomputing and HPC
-* Programming Language
 
 ## Other Topic
 ------------------------
@@ -32,7 +31,7 @@ All
 ## Session Description
 ------------------------
 
-This presentation is co-authored with Professor Lorena Barba. In this session, we will show how to apply AmgX -- NVIDIA's experimental library of multi-GPU linear solvers and multigrid preconditioners -- to and accelerate existing PETSc applications. We will show the wrapper we developed for AmgX against PETSc. With this wrapper, programmers can easily apply AmgX solvers to their existing parallel programs that use PETSc KSP solvers by just adding less than 10 lines to their codes. An example using PetIBM -- our PETSc-based scalable immersed-boundary method CFD codes -- will demonstrate how AmgX can immediately accelerate the application and how its multi-GPU capacity can be useful for large-scale 3D CFD simulations. We will also present the performance benchmarks of AmgX and the strategies for optimizing multigrid preconditioners on GPUs, which are sometimes different from how we set them on CPU-based multigrid preconditioners. 
+We show how to apply AmgX -- NVIDIA's experimental library of multi-GPU linear solvers and multigrid preconditioners -- to accelerate existing PETSc applications using a wrapper we have developed. With AmgX and this wrapper, programmers can accelerate their existing PETSc applications by simplely adding fewer than 10 lines to their codes. An example using PetIBM -- our PETSc-based scalable immersed boundary method CFD codes -- demonstrate how AmgX can immediately speed up the application and how its multi-GPU capacity can be useful for large-scale 3D CFD simulations. This speed up not only shortens executing time but also reduce money cost on hardware. We demonstrate this money saving using Amazon AWS clusters as example. We also present performance benchmarks of AmgX in order to give users more sense about optimizing multigrid preconditioners on GPUs. This presentation is co-authored with Professor Lorena Barba.
 
 ## Extended Abstract & Results
 ------------------------
