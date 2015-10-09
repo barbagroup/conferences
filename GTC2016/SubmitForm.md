@@ -1,7 +1,7 @@
 ## Session Title
 ------------------------
 
-Explore AmgX and use it to accelerate PETSc-based immersed-boundary method CFD codes
+Using AmgX to accelerate PETSc-based CFD codes
 
 ## Contact
 ------------------------
