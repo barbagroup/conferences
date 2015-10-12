@@ -50,8 +50,7 @@ Our benchmarks show AmgX can achieve respectable speed-ups.
 For example, using 1 to 16 K20m GPUs to solve a 3D Poisson problem with AmgX on 4M unknowns results in a speed-up of betwee 5x and 15x compared to using PETSc KSP solvers on 32 CPU cores (2 nodes). 
 For larger problems, using AmgX on 32 K20m GPUs with 100M unknowns results in speed-ups of 62x, 26x, and 9x compared to PETSc on 128, 256, and 512 CPU cores.
 Even using only one C2050, an old-generation GPU, results in a 2x speed-up compared to PETSc on 32 CPU cores. 
-Solving larger problems on GPUs is limited by the memory on each GPU card.
-We also show how optimal choices of parameters for multigrid preconditioners depend not only on the problem but also on the number and model of GPUs. 
+We will also show how optimal choices of parameters for multigrid preconditioners depend not only on the problem but also on the number and model of GPUs. 
 Strategies to set parameters differ whether using GPU-or CPU-based multigrid preconditioners. 
 For instance, F and W cycles may be useful on CPUs, while the simplest V cycle may be more suitable on GPUs, because solving on the coarsest grid is proportionally more expensive on GPUs.
 We are conducting more systematic benchmarks in order to give users a better sense of how to get good performance with AmgX.
