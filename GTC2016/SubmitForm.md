@@ -47,7 +47,7 @@ We chose AmgX as our GPU solvers because of its multi-GPU capability.
 Our CFD solver already uses the PETSc library, which meant we had to develop wrapper code to couple the two.
 We first explore the performance of AmgX on 2D and 3D Poisson problems and compare the results to PETSc KSP solvers.
 Our benchmarks show AmgX can achieve respectable speed-ups. 
-For example, using 1 to 16 K20m GPUs to solve a 3D Poisson problem with AmgX on 4M unknowns results in a speed-up of betwee 5x and 15x compared to using PETSc KSP solvers on 32 CPU cores (2 nodes). 
+For example, using 1 to 16 K20m GPUs to solve a 3D Poisson problem with AmgX on 4M unknowns results in a speed-up of between 5x and 15x compared to using PETSc KSP solvers on 32 CPU cores (2 nodes). 
 For larger problems, using AmgX on 32 K20m GPUs with 100M unknowns results in speed-ups of 62x, 26x, and 9x compared to PETSc on 128, 256, and 512 CPU cores.
 Even using only one C2050, an old-generation GPU, results in a 2x speed-up compared to PETSc on 32 CPU cores. 
 We will also show how optimal choices of parameters for multigrid preconditioners depend not only on the problem but also on the number and model of GPUs. 
@@ -97,7 +97,7 @@ She was appointed CUDA Fellow by NVIDIA Corporation (2012) and is an internation
 **Biography**: 
 Pi-Yueh Chuang is a PhD student in Mechanical and Aerospace Engineering at George Washington University, Washington DC. He is a member in Porfessor Lorena A. Barba's research group. 
 His current research interests are GPU applications in CFD simulations and immersed boundary methods. 
-Prior to his PhD studying, he worked as an engineer in Moldex3D–a company developing mold-flow simulation software–and thought that GPU technologies are the future of industry-orientated CFD software. 
+Prior to his PhD studying, he worked as an engineer in Moldex3D–a company developing mold-flow simulation software–and thought that GPU technologies are the future of industry-oriented CFD software. 
 He got his MS degree in Mechanical Engineering from National Taiwan University with thesis and papers focusing on direct simulation Monte Carlo method and nanoscale energy transport. 
 He has BS in Power Mechanical Engineering from National Tsing Hua University, Taiwan.  
 **Headshot**:  
