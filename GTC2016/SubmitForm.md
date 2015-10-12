@@ -64,12 +64,13 @@ We plan to confirm a large saving on the cost of running PetIBM with AmgX on clo
 
 ## Presenter Public Speaking History
 ------------------------
-The presenter is a member in Professor Lorena A. Barba's research group. 
-Prof. Barba presented a session at GTC in years 2010, 2013, and 2014 and is a highly rated speaker.
-The presenter will be mentored by Prof. Barba for this session.
 
-The presenter's speaking history is:  
-"A study of the lattice thermal conductivity of 3D nanoparticle composites", peper compitition at 19th National Computational Fluid Dynamic Conference, Penghu, Taiwan, 2012.
+Pi-Yueh is a member in Prof. Lorena A. Barba's research group.
+Prof. Barba presented a session at GTC in years 2010, 2013, and 2014 and is a highly rated speaker.
+Pi-Yueh will be mentored by her for this session
+
+Pi-Yueh's speaking history:  
+19th National CFD Conference, Penghu, Taiwan, 2012
 
 ## Presenters
 ------------------------
