@@ -87,7 +87,7 @@ She has MSc and PhD degrees in Aeronautics from the California Institute of Tech
 Previous to joining GW, she was Assistant Professor of Mechanical Engineering at Boston University (2008–2013) and Lecturer/Senior Lecturer of Applied Mathematics at University of Bristol, UK (2004–2008). 
 Prof. Barba is an Amelia Earhart Fellow of the Zonta Foundation (1999), a recipient of the EPSRC First Grant program (UK, 2007), an NVIDIA Academic Partner award recipient (2011), and a recipient of the NSF Faculty Early CAREER award (2012). 
 She was appointed CUDA Fellow by NVIDIA Corporation (2012) and is an internationally recognized leader in computational science and engineering.  
-**Headshot**:
+**Headshot**: <img src="LorenaB_aboutme6_crop.png" width="200">
 
 **First Name**: Pi-Yueh  
 **Last Name**: Chuang  
