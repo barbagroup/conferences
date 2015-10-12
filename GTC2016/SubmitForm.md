@@ -32,10 +32,11 @@ Intermediate
 ------------------------
 
 Learn to accelerate existing PETSc applications using AmgX–NVIDIA's library of multi-GPU linear solvers and multigrid preconditioners. 
-We developed wrapper code to couple AmgX and PETSC, allowing programmers to use it with fewer than 10 additional lines of code. 
+We developed wrapper code to couple AmgX and PETSc, allowing programmers to use it with fewer than 10 additional lines of code. 
 Using PetIBM, our PETSc-based immersed-boundary CFD solver, we show how AmgX can speed up an application with little programming effort. 
 AmgX can thus bring multi-GPU capability to large-scale 3D CFD simulations, reducing execution time and lowering hardware costs. 
-As example, we estimate the potential cost savings using Amazon AWS compute cloud. We also present performance benchmarks of AmgX, and tips for optimizing GPU multigrid preconditioners for CFD. 
+As example, we estimate the potential cost savings using Amazon elastic compute cloud (EC2). 
+We also present performance benchmarks of AmgX, and tips for optimizing GPU multigrid preconditioners for CFD. 
 This presentation is co-authored with Professor Lorena A. Barba.
 
 ## Extended Abstract & Results
@@ -51,11 +52,14 @@ For larger problems, using AmgX on 32 K20m GPUs with 100M unknowns results in sp
 Even using only one C2050, an old-generation GPU, results in a 2x speed-up compared to PETSc on 32 CPU cores. 
 Solving larger problems on GPUs is limited by the memory on each GPU card.
 We also show how optimal choices of parameters for multigrid preconditioners depend not only on the problem but also on the number and model of GPUs. 
-Strategies to set parameters diffe whether using GPU-or CPU-based multigrid preconditioners. For instance, F and W cycles may be useful on CPUs, while the simplest V cycle may be more suitable on GPUs, because solving on the coarsest-grid is proportionally more expensive on GPUs.
+Strategies to set parameters differ whether using GPU-or CPU-based multigrid preconditioners. 
+For instance, F and W cycles may be useful on CPUs, while the simplest V cycle may be more suitable on GPUs, because solving on the coarsest grid is proportionally more expensive on GPUs.
 We are conducting more systematic benchmarks in order to give users a better sense of how to get good performance with AmgX.
 In our application code (PetIBM), solving the Poisson system with PETSc KSP solvers takes up to 90% of the execution time.
-We expect a significant speed-up with AmgX. On multiple GPUs, we can solve larger-scale problems or have finer grids to carry out turbulent flow simulations.
-Using AmgX can lower overall hardware cost for a given application. With Amazon AWS, for example: if we wanted to solve the problem mentioned above, with 100M unknowns on 512 CPU cores, it would cost about $28 per hour; whereas solving it on a 32-GPU cluster using AmgX would cost about $20 per hour. 
+We expect a significant speed-up with AmgX. 
+On multiple GPUs, we can solve larger-scale problems or have finer grids to carry out turbulent flow simulations.
+Using AmgX can lower overall hardware cost for a given application. 
+With Amazon AWS, for example: if we wanted to solve the problem mentioned above, with 100M unknowns on 512 CPU cores, it would cost about $28 per hour; whereas solving it on a 32-GPU cluster using AmgX would cost about $20 per hour. 
 More importantly, the execution time required on the 32-GPU cluster could be 9x less (extrapolating from our tests). 
 We plan to confirm a large saving on the cost of running PetIBM with AmgX on cloud compute resources.
 
