@@ -80,7 +80,12 @@ The presenter's speaking history is:
 **Cell Phone**: 617-909-5900  
 **Job Title**: Associate Professor  
 **Company**: George Washington University  
-**Biography**: Lorena A. Barba is Associate Professor of Mechanical and Aerospace Engineering at the George Washington University, in Washington DC. She has MSc and PhD degrees in Aeronautics from the California Institute of Technology and BSc and PEng degrees in Mechanical Engineering from Universidad Técnica Federico Santa María in Chile. Previous to joining GW, she was Assistant Professor of Mechanical Engineering at Boston University (2008–2013) and Lecturer/Senior Lecturer of Applied Mathematics at University of Bristol, UK (2004–2008). Prof. Barba is an Amelia Earhart Fellow of the Zonta Foundation (1999), a recipient of the EPSRC First Grant program (UK, 2007), an NVIDIA Academic Partner award recipient (2011), and a recipient of the NSF Faculty Early CAREER award (2012). She was appointed CUDA Fellow by NVIDIA Corporation (2012) and is an internationally recognized leader in computational science and engineering.  
+**Biography**: 
+Lorena A. Barba is Associate Professor of Mechanical and Aerospace Engineering at the George Washington University, in Washington DC. 
+She has MSc and PhD degrees in Aeronautics from the California Institute of Technology and BSc and PEng degrees in Mechanical Engineering from Universidad Técnica Federico Santa María in Chile. 
+Previous to joining GW, she was Assistant Professor of Mechanical Engineering at Boston University (2008–2013) and Lecturer/Senior Lecturer of Applied Mathematics at University of Bristol, UK (2004–2008). 
+Prof. Barba is an Amelia Earhart Fellow of the Zonta Foundation (1999), a recipient of the EPSRC First Grant program (UK, 2007), an NVIDIA Academic Partner award recipient (2011), and a recipient of the NSF Faculty Early CAREER award (2012). 
+She was appointed CUDA Fellow by NVIDIA Corporation (2012) and is an internationally recognized leader in computational science and engineering.  
 **Headshot**:
 
 **First Name**: Pi-Yueh  
@@ -89,5 +94,10 @@ The presenter's speaking history is:
 **Cell Phone**: 202-517-3455  
 **Job Title**: PhD student  
 **Company**: George Washington University  
-**Biography**: Pi-Yueh Chuang is a PhD student in Mechanical and Aerospace Engineering at George Washington University, Washington DC. He is a member in Porfessor Lorena A. Barba's research group. His current research interests are GPU applications in CFD simulations and immersed boundary methods. Prior to his PhD studying, he worked as an engineer in Moldex3D–a company developing mold-flow simulation software–and thought that GPU technologies are the future of industry-orientated CFD software. He got his MS degree in Mechanical Engineering from National Taiwan University with thesis and papers focusing on direct simulation Monte Carlo method and nanoscale energy transport. He has BS in Power Mechanical Engineering from National Tsing Hua University, Taiwan.  
+**Biography**: 
+Pi-Yueh Chuang is a PhD student in Mechanical and Aerospace Engineering at George Washington University, Washington DC. He is a member in Porfessor Lorena A. Barba's research group. 
+His current research interests are GPU applications in CFD simulations and immersed boundary methods. 
+Prior to his PhD studying, he worked as an engineer in Moldex3D–a company developing mold-flow simulation software–and thought that GPU technologies are the future of industry-orientated CFD software. 
+He got his MS degree in Mechanical Engineering from National Taiwan University with thesis and papers focusing on direct simulation Monte Carlo method and nanoscale energy transport. 
+He has BS in Power Mechanical Engineering from National Tsing Hua University, Taiwan.  
 **Headshot**:  
