@@ -100,4 +100,4 @@ His current research interests are GPU applications in CFD simulations and immer
 Prior to his PhD studying, he worked as an engineer in Moldex3D–a company developing mold-flow simulation software–and thought that GPU technologies are the future of industry-oriented CFD software. 
 He got his MS degree in Mechanical Engineering from National Taiwan University with thesis and papers focusing on direct simulation Monte Carlo method and nanoscale energy transport. 
 He has BS in Power Mechanical Engineering from National Tsing Hua University, Taiwan.  
-**Headshot**: ![](file:///home/pychuang/Dropbox/BarbaGroup/conferences/GTC2016/py_headshot.jpg =200x)  
+**Headshot**: <img src="py_headshot.jpg" width="200">  
