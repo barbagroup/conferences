@@ -58,7 +58,7 @@ In our application code (PetIBM), solving the Poisson system with PETSc KSP solv
 We expect a significant speed-up with AmgX. 
 On multiple GPUs, we can solve larger-scale problems or have finer grids to carry out turbulent flow simulations.
 Using AmgX can lower overall hardware cost for a given application. 
-With Amazon AWS, for example: if we wanted to solve the problem mentioned above, with 100M unknowns on 512 CPU cores, it would cost about $28 per hour; whereas solving it on a 32-GPU cluster using AmgX would cost about $20 per hour. 
+With Amazon elastic compute cloud (EC2), for example: if we wanted to solve the problem mentioned above, with 100M unknowns on 512 CPU cores, it would cost about $28 per hour; whereas solving it on a 32-GPU cluster using AmgX would cost about $20 per hour. 
 More importantly, the execution time required on the 32-GPU cluster could be 9x less (extrapolating from our tests). 
 We plan to confirm a large saving on the cost of running PetIBM with AmgX on cloud compute resources.
 
