@@ -1,0 +1,5 @@
+# solversPetscOptions.info
+
+# Velocity solver: prefix `-velocity_`
+
+# Poisson solver: prefix `-poisson_`
