@@ -6,11 +6,6 @@ Functions for parsing performance files from PetIBM
 
 import os
 import re
-import numpy
-from matplotlib import pyplot
-from matplotlib import gridspec
-
-pyplot.style.use('style')
 
 
 class NoInfoError(Exception):
@@ -41,6 +36,7 @@ def findResultFiles(resultPath):
             if f == "performanceSummary.txt":
                 resultFiles.append(root + "/" + f)
 
+    print(resultPath)
     return resultFiles
 
 

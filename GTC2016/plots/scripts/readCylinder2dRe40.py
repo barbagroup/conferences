@@ -4,10 +4,9 @@
 read performance results of 2D cylinder flow, Re40
 '''
 
+import os
 from matplotlib import pyplot
 from parsePetIBMperformance import *
-
-pyplot.style.use('style')
 
 def plotOneCylinderFig(
         caseNames, caseNameDict, events, timing, plotOrder, figName, save):
@@ -64,7 +63,7 @@ def plotOneCylinderFig(
         pyplot.show()
 
 
-def plotCylinderFigs(folder, save):
+def plotCylinderFigs(folder, saveDir, save):
     '''
     Plot all figures for 2D cylinder flow (Re=40) for GTC presentation
     '''
@@ -88,9 +87,9 @@ def plotCylinderFigs(folder, save):
     plotOrder = [4, 2, 3, 1, 5, 0]
 
     figNames = [
-            "rawAmgXMultiRanks_Cylinder2d_1.png", 
-            "rawAmgXMultiRanks_Cylinder2d_2.png", 
-            "newAmgXMultiRanks_Cylinder2d.png"]
+            saveDir + "/rawAmgXMultiRanks_Cylinder2d_1.png", 
+            saveDir + "/rawAmgXMultiRanks_Cylinder2d_2.png", 
+            saveDir + "/newAmgXMultiRanks_Cylinder2d.png"]
     
     for i in range(len(cases)):
         plotOneCylinderFig(
