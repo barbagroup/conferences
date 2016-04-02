@@ -1,0 +1,177 @@
+nohup: ignoring input
+
+======================
+*** PetIBM - Start ***
+======================
+
+Parsing file .//cartesianMesh.yaml... done.
+
+Parsing file .//flowDescription.yaml... done.
+
+Parsing file .//simulationParameters.yaml... done.
+
+---------------------------------------
+Cartesian grid
+---------------------------------------
+number of cells: 1704 x 1704
+---------------------------------------
+
+---------------------------------------
+Flow
+---------------------------------------
+dimensions: 2
+viscosity: 0.0005
+initial velocity field:
+	1.
+	0.
+boundary conditions (component, type, value):
+	->location: xMinus (left)
+		0 	 DIRICHLET 	 1.
+		1 	 DIRICHLET 	 0.
+	->location: xPlus (right)
+		0 	 CONVECTIVE 	 1.
+		1 	 CONVECTIVE 	 0.
+	->location: yMinus (bottom)
+		0 	 DIRICHLET 	 1.
+		1 	 DIRICHLET 	 0.
+	->location: yPlus (top)
+		0 	 DIRICHLET 	 1.
+		1 	 DIRICHLET 	 0.
+---------------------------------------
+
+---------------------------------------
+Time-stepping
+---------------------------------------
+formulation: Immersed-Boundary Projection method (Taira and Colonius, 2007)
+convection: second-order Adams-Bashforth
+diffusion: second-order Crank-Nicolson
+time-increment: 0.0004
+starting time-step: 0
+number of time-steps: 40000
+saving-interval: 2500
+---------------------------------------
+
+Parsing file .//bodies.yaml... done.
+
+----------------------------------------
+KSP info: Velocity system
+----------------------------------------
+KSP Object:(velocity_) 32 MPI processes
+  type: bcgs
+  maximum iterations=20000
+  tolerances:  relative=1e-05, absolute=1e-50, divergence=10000.
+  left preconditioning
+  using nonzero initial guess
+  using DEFAULT norm type for convergence test
+PC Object:(velocity_) 32 MPI processes
+  type: bjacobi
+  PC has not been set up so information may be incomplete
+    block Jacobi: number of blocks = -1
+    Local solve is same for all blocks, in the following KSP and PC objects:
+  linear system matrix = precond matrix:
+  Mat Object:   32 MPI processes
+    type: mpiaij
+    rows=5803824, cols=5803824
+    total: nonzeros=29005492, allocated nonzeros=29019120
+    total number of mallocs used during MatSetValues calls =0
+      not using I-node (on process 0) routines
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+AMG Grid:
+         Number of Levels: 10
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)      2904786          14545910  1.72e-06          0.241
+           1(D)       846447           4924053  6.87e-06          0.146
+           2(D)       235155           1561501  2.82e-05         0.0446
+           3(D)        49833            344275  0.000139        0.00983
+           4(D)        11592             80716  0.000601        0.00233
+           5(D)         2605             18131   0.00267       0.000537
+           6(D)          573              3977    0.0121       0.000125
+           7(D)          137               929    0.0495       3.18e-05
+           8(D)           30               186     0.207       7.66e-06
+           9(D)            8                36     0.562       1.79e-06
+         --------------------------------------------------------------
+         Grid Complexity: 1.39465
+         Operator Complexity: 1.47668
+         Total Memory Usage: 0.443517 GB
+         --------------------------------------------------------------
+
+[time-step 0] Writing grid into file... done.
+
+[time-step 2500] Writing fluxes into file... done.
+
+[time-step 2500] Writing pressure and body forces into file... done.
+
+[time-step 5000] Writing fluxes into file... done.
+
+[time-step 5000] Writing pressure and body forces into file... done.
+
+[time-step 7500] Writing fluxes into file... done.
+
+[time-step 7500] Writing pressure and body forces into file... done.
+
+[time-step 10000] Writing fluxes into file... done.
+
+[time-step 10000] Writing pressure and body forces into file... done.
+
+[time-step 12500] Writing fluxes into file... done.
+
+[time-step 12500] Writing pressure and body forces into file... done.
+
+[time-step 15000] Writing fluxes into file... done.
+
+[time-step 15000] Writing pressure and body forces into file... done.
+
+[time-step 17500] Writing fluxes into file... done.
+
+[time-step 17500] Writing pressure and body forces into file... done.
+
+[time-step 20000] Writing fluxes into file... done.
+
+[time-step 20000] Writing pressure and body forces into file... done.
+
+[time-step 22500] Writing fluxes into file... done.
+
+[time-step 22500] Writing pressure and body forces into file... done.
+
+[time-step 25000] Writing fluxes into file... done.
+
+[time-step 25000] Writing pressure and body forces into file... done.
+
+[time-step 27500] Writing fluxes into file... done.
+
+[time-step 27500] Writing pressure and body forces into file... done.
+
+[time-step 30000] Writing fluxes into file... done.
+
+[time-step 30000] Writing pressure and body forces into file... done.
+
+[time-step 32500] Writing fluxes into file... done.
+
+[time-step 32500] Writing pressure and body forces into file... done.
+
+[time-step 35000] Writing fluxes into file... done.
+
+[time-step 35000] Writing pressure and body forces into file... done.
+
+[time-step 37500] Writing fluxes into file... done.
+
+[time-step 37500] Writing pressure and body forces into file... done.
+
+[time-step 40000] Writing fluxes into file... done.
+
+[time-step 40000] Writing pressure and body forces into file... done.
+
+=====================
+*** PetIBM - Done ***
+=====================
