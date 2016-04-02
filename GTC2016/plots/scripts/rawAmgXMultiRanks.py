@@ -4,7 +4,7 @@ from matplotlib import gridspec
 
 pyplot.style.use('style')
 
-def plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName):
+def plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName, ylim=None):
 
     fig = pyplot.figure(figsize=(8, 5), dpi=150)
     gs = gridspec.GridSpec(1, 2, width_ratios=[1, 1])
@@ -23,6 +23,8 @@ def plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName):
                 fontweight="medium", fontstyle="italic")
 
         ax.set_ylabel("Time (sec)", fontsize=16)
+        if ylim != None and type(ylim) == list:
+            ax.set_ylim(ylim)
         ax.tick_params(axis="y", labelsize="14")
         ax.yaxis.grid(zorder=0)
 
@@ -57,9 +59,9 @@ solveTime = [
 
 titles = ["1 GPU (K40c)", "2 GPU (K40c)"]
 
-figName = "rawAmgXMultiRanks_Aggregation.png"
+figName = "../rawAmgXMultiRanks_Aggregation.png"
 
-plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName)
+plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName, [0, 18])
 
 
 '''
@@ -72,6 +74,6 @@ solveTime = [
         numpy.array(
             [0.908612, 1.333168, 1.649151, 2.324669, 2.456639, 3.572393])]
 
-figName = "rawAmgXMultiRanks_Classical.png"
+figName = "../rawAmgXMultiRanks_Classical.png"
 
-plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName)
+plotRawAmgXMultiRanks(nRanks, solveTime, titles, figName, [0, 4])
