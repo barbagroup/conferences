@@ -1,0 +1,8 @@
+# solversPetscOptions.info
+
+# velocity solver: prefix `-velocity_`
+-velocity_ksp_type bcgs
+-velocity_ksp_max_it 20000
+
+# Poisson solver: prefix `-poisson_`
+
