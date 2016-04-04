@@ -93,7 +93,7 @@ div.text_cell_render{
 
 .text_cell_render h4 {    /*Use this for small titles*/
     font-family: 'Roboto Slab', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 14pt;
     line-height: 110%;
     color: rgb(172,87,17);
