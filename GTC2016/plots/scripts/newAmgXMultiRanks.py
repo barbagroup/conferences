@@ -17,12 +17,12 @@ def plotNewAmgXMultiRanks(nRanks, solveTime, titles, figName, ylim=None):
         bLoc = numpy.arange(1, 7) - 0.35
 
         ax.bar(bLoc, solveTime['raw'][i], bw, 
-                label="Solve Time w/o wrapper", lw=0, color='#348ABD', zorder=0)
+                label="Original AmgX Wrapper", lw=0, color='#348ABD', zorder=0)
 
         bLoc += 0.35
 
         ax.bar(bLoc, solveTime['new'][i], bw, 
-                label="Solve Time w/ wrapper", lw=0, color='#A60628', zorder=0)
+                label="Improved AmgX Wrapper", lw=0, color='#A60628', zorder=0)
 
 
         ax.set_title(titles[i], fontsize=18, 
