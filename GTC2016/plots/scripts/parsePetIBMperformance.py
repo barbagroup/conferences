@@ -29,15 +29,30 @@ def findResultFiles(resultPath):
     Get the full path of each performance files under a given directory.
     '''
 
-    resultFiles = []
+    resultFiles = {}
 
     for root, dirs, files in os.walk(resultPath):
         for f in files:
             if f == "performanceSummary.txt":
-                resultFiles.append(root + "/" + f)
+                keys = root.replace(resultPath + "/", "").split("/")
+                createNestedDict(resultFiles, keys, root+"/"+f)
 
-    print(resultPath)
     return resultFiles
+
+
+def createNestedDict(d, keys, lastValue):
+    '''
+    '''
+    
+    assert type(keys) == list, \
+        "The type of the second parameter should be a list."
+
+    if len(keys) == 1:
+        d[keys[0]] = lastValue
+    else:
+        if keys[0] not in d.keys():
+            d[keys[0]] = {}
+        createNestedDict(d[keys[0]], keys[1:], lastValue)
 
 
 def getCaseName(content):
@@ -65,10 +80,6 @@ def parseSingleResultFile(perfFile, unit):
             "The unit of timing should be one of " +\
             "'s' (second), 'm' (minute), or 'h' (hour)!"
 
-
-    print("parsing the case name of " + perfFile + " ...")
-    
-    caseName = getCaseName(perfFile)
 
     print("opening " + perfFile + " ...")
 
@@ -106,7 +117,7 @@ def parseSingleResultFile(perfFile, unit):
 
     events, dataBlock = rearrangeData(dataBlock)
 
-    return caseName, events, dataBlock
+    return events, dataBlock
 
 
 def rearrangeData(dataBlock):
@@ -137,32 +148,49 @@ def parseResultFiles(filePath, unit):
     Parse a set of performanceSummary.txt.
     '''
 
-    data = {}
+    data = findResultFiles(filePath)
 
-    resultFiles = findResultFiles(filePath)
+    events = parseNestedResults(data, unit)[0]
 
-    for f in resultFiles:
+    return data, events
+
+
+def parseNestedResults(d, unit):
+    '''
+    '''
+
+    if type(d) != dict and type(d) == str:
 
         try:
 
-            caseName, events, timings = parseSingleResultFile(f, unit)
+            events, timing = parseSingleResultFile(d, unit)
 
         except NoInfoError as e:
 
-            print("\nIn the file " + f + ": " + e.value + "\n")
+            print("\nIn the file " + d + ": " + e.value + "\n")
 
             choose = input(
                     "Add extension \".broken\" to the broken file " +
                     "and ignore it? (Y/n)")
 
             if choose != "n":
-                os.rename(f, f + ".broken")
+                os.rename(d, d + ".broken")
             else:
                 raise
 
-        data[caseName] = timings
+        return events, timing, True
 
-    return data, events
+    elif type(d) == dict:
+
+        for key in d.keys():
+
+            events, timing, changed = parseNestedResults(d[key], unit)
+
+            if changed:
+                d[key] = timing
+
+        return events, None, False
+    
 
 """
 def getBenchmarkData(resultPath, output=True):
