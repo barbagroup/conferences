@@ -1,0 +1,142 @@
+Sun Feb 21 16:35:12 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   25C    P0    48W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   26C    P0    50W / 225W |     12MiB /  4799MiB |     69%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ Data for JOB [44195,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node348	Num slots: 2	Max slots: 0	Num procs: 1
+ 	Process OMPI jobid: [44195,1] App: 0 Process rank: 0
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx100Ny100Nz100_AmgX_Classical_1
+Nx: 100
+Ny: 100
+Nz: 100
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx100Ny100Nz100_AmgX_Classical_1
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+CUDA devices on the node node348 are more than the MPI processes launched. Only 1 CUDA devices will be used.
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+AMG Grid:
+         Number of Levels: 7
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)      1000000           6940000  6.94e-06          0.107
+           1(D)       500000           9320600  3.73e-05          0.228
+           2(D)        83338          10681050   0.00154          0.242
+           3(D)        10337           3323825    0.0311         0.0747
+           4(D)          782            294852     0.482        0.00662
+           5(D)           69              4761         1       0.000109
+           6(D)            6                36         1       9.98e-07
+         --------------------------------------------------------------
+         Grid Complexity: 1.59453
+         Operator Complexity: 4.4042
+         Total Memory Usage: 0.658982 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 0.224033
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223255
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223335
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223105
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223236
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223203
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223300
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223290
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223432
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223262
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.223349
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 15
+
+The averaged solving time is: 0.223277
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx100Ny100Nz100_AmgX_Classical_1
+------------------------------------------------------------------------
+========================================================================

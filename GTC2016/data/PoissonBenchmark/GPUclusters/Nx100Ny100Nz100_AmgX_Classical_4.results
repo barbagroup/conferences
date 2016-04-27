@@ -1,0 +1,149 @@
+Sun Feb 21 16:52:08 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   31C    P0    52W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   30C    P0    51W / 225W |     12MiB /  4799MiB |     68%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+WARNING: infoROM is corrupted at gpu 0000:03:00.0
+ Data for JOB [64922,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node340	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [64922,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [64922,1] App: 0 Process rank: 1
+
+ Data for node: node341	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [64922,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [64922,1] App: 0 Process rank: 3
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx100Ny100Nz100_AmgX_Classical_4
+Nx: 100
+Ny: 100
+Nz: 100
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx100Ny100Nz100_AmgX_Classical_4
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+License acquired, proceeding
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+License acquired, proceeding
+License acquired, proceeding
+AMG Grid:
+         Number of Levels: 6
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)      1000000           6940000  6.94e-06          0.112
+           1(D)       499887           9328409  3.73e-05          0.248
+           2(D)        80561          10086311   0.00155            0.3
+           3(D)         7989           2204417    0.0345          0.103
+           4(D)          587            166133     0.482         0.0149
+           5(D)           50              2500         1        0.00023
+         --------------------------------------------------------------
+         Grid Complexity: 1.58907
+         Operator Complexity: 4.13945
+         Total Memory Usage: 0.777587 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 0.127547
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125156
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125300
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125536
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125215
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125415
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125160
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125083
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125384
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125042
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.125047
+	L2-Norm: 0.348553
+	Max-Norm: 0.00065713
+	Iterations 19
+
+The averaged solving time is: 0.125234
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx100Ny100Nz100_AmgX_Classical_4
+------------------------------------------------------------------------
+========================================================================

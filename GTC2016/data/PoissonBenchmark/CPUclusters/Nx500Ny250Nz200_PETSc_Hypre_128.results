@@ -1,0 +1,1021 @@
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [31648,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node118	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 15
+
+ Data for node: node131	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 31
+
+ Data for node: node144	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 32
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 33
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 34
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 35
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 36
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 37
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 38
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 39
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 40
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 41
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 42
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 43
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 44
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 45
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 46
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 47
+
+ Data for node: node166	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 48
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 49
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 50
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 51
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 52
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 53
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 54
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 55
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 56
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 57
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 58
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 59
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 60
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 61
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 62
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 63
+
+ Data for node: node171	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 64
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 65
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 66
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 67
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 68
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 69
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 70
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 71
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 72
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 73
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 74
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 75
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 76
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 77
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 78
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 79
+
+ Data for node: node172	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 80
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 81
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 82
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 83
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 84
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 85
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 86
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 87
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 88
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 89
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 90
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 91
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 92
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 93
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 94
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 95
+
+ Data for node: node179	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 96
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 97
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 98
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 99
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 100
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 101
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 102
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 103
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 104
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 105
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 106
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 107
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 108
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 109
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 110
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 111
+
+ Data for node: node180	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 112
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 113
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 114
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 115
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 116
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 117
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 118
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 119
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 120
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 121
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 122
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 123
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 124
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 125
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 126
+ 	Process OMPI jobid: [31648,1] App: 0 Process rank: 127
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_PETSc_Hypre_128
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_PETSc_Hypre_128
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [40274,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node123	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 15
+
+ Data for node: node138	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 31
+
+ Data for node: node151	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 32
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 33
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 34
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 35
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 36
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 37
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 38
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 39
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 40
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 41
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 42
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 43
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 44
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 45
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 46
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 47
+
+ Data for node: node155	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 48
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 49
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 50
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 51
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 52
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 53
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 54
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 55
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 56
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 57
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 58
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 59
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 60
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 61
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 62
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 63
+
+ Data for node: node160	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 64
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 65
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 66
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 67
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 68
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 69
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 70
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 71
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 72
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 73
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 74
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 75
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 76
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 77
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 78
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 79
+
+ Data for node: node164	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 80
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 81
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 82
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 83
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 84
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 85
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 86
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 87
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 88
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 89
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 90
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 91
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 92
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 93
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 94
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 95
+
+ Data for node: node167	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 96
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 97
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 98
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 99
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 100
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 101
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 102
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 103
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 104
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 105
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 106
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 107
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 108
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 109
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 110
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 111
+
+ Data for node: node187	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 112
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 113
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 114
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 115
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 116
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 117
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 118
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 119
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 120
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 121
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 122
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 123
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 124
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 125
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 126
+ 	Process OMPI jobid: [40274,1] App: 0 Process rank: 127
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_PETSc_Hypre_128
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_PETSc_Hypre_128
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [25337,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node120	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 15
+
+ Data for node: node121	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 31
+
+ Data for node: node122	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 32
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 33
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 34
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 35
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 36
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 37
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 38
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 39
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 40
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 41
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 42
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 43
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 44
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 45
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 46
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 47
+
+ Data for node: node123	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 48
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 49
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 50
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 51
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 52
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 53
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 54
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 55
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 56
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 57
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 58
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 59
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 60
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 61
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 62
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 63
+
+ Data for node: node188	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 64
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 65
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 66
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 67
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 68
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 69
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 70
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 71
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 72
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 73
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 74
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 75
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 76
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 77
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 78
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 79
+
+ Data for node: node189	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 80
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 81
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 82
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 83
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 84
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 85
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 86
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 87
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 88
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 89
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 90
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 91
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 92
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 93
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 94
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 95
+
+ Data for node: node190	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 96
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 97
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 98
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 99
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 100
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 101
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 102
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 103
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 104
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 105
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 106
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 107
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 108
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 109
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 110
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 111
+
+ Data for node: node191	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 112
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 113
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 114
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 115
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 116
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 117
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 118
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 119
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 120
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 121
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 122
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 123
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 124
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 125
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 126
+ 	Process OMPI jobid: [25337,1] App: 0 Process rank: 127
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_PETSc_Hypre_128
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_PETSc_Hypre_128
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 11.047594
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 0 ... 
+	Solve Time: 7.430945
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 1 ... 
+	Solve Time: 7.432437
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 2 ... 
+	Solve Time: 7.597617
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 3 ... 
+	Solve Time: 7.456964
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 4 ... 
+	Solve Time: 7.431036
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 5 ... 
+	Solve Time: 7.428473
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 6 ... 
+	Solve Time: 7.430172
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 7 ... 
+	Solve Time: 7.430806
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 8 ... 
+	Solve Time: 7.425908
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+Run # 9 ... 
+	Solve Time: 7.429638
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 43
+
+The averaged solving time is: 7.449400
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_PETSc_Hypre_128
+------------------------------------------------------------------------
+========================================================================
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [46082,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node133	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 15
+
+ Data for node: node134	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 31
+
+ Data for node: node135	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 32
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 33
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 34
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 35
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 36
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 37
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 38
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 39
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 40
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 41
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 42
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 43
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 44
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 45
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 46
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 47
+
+ Data for node: node136	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 48
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 49
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 50
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 51
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 52
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 53
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 54
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 55
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 56
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 57
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 58
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 59
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 60
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 61
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 62
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 63
+
+ Data for node: node137	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 64
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 65
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 66
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 67
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 68
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 69
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 70
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 71
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 72
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 73
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 74
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 75
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 76
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 77
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 78
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 79
+
+ Data for node: node138	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 80
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 81
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 82
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 83
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 84
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 85
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 86
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 87
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 88
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 89
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 90
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 91
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 92
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 93
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 94
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 95
+
+ Data for node: node148	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 96
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 97
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 98
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 99
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 100
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 101
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 102
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 103
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 104
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 105
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 106
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 107
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 108
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 109
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 110
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 111
+
+ Data for node: node164	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 112
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 113
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 114
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 115
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 116
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 117
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 118
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 119
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 120
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 121
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 122
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 123
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 124
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 125
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 126
+ 	Process OMPI jobid: [46082,1] App: 0 Process rank: 127
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_PETSc_Hypre_128
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_PETSc_Hypre_128
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 10.061739
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 0 ... 
+	Solve Time: 2.728607
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 1 ... 
+	Solve Time: 2.732720
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 2 ... 
+	Solve Time: 2.733762
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 3 ... 
+	Solve Time: 2.749005
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 4 ... 
+	Solve Time: 2.739037
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 5 ... 
+	Solve Time: 2.743691
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 6 ... 
+	Solve Time: 2.798095
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 7 ... 
+	Solve Time: 2.791209
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 8 ... 
+	Solve Time: 2.769413
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+Run # 9 ... 
+	Solve Time: 2.744875
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 13
+
+The averaged solving time is: 2.753041
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_PETSc_Hypre_128
+------------------------------------------------------------------------
+========================================================================
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [34671,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node133	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 15
+
+ Data for node: node134	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 31
+
+ Data for node: node165	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 32
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 33
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 34
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 35
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 36
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 37
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 38
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 39
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 40
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 41
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 42
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 43
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 44
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 45
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 46
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 47
+
+ Data for node: node166	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 48
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 49
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 50
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 51
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 52
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 53
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 54
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 55
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 56
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 57
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 58
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 59
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 60
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 61
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 62
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 63
+
+ Data for node: node167	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 64
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 65
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 66
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 67
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 68
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 69
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 70
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 71
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 72
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 73
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 74
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 75
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 76
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 77
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 78
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 79
+
+ Data for node: node168	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 80
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 81
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 82
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 83
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 84
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 85
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 86
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 87
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 88
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 89
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 90
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 91
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 92
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 93
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 94
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 95
+
+ Data for node: node169	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 96
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 97
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 98
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 99
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 100
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 101
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 102
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 103
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 104
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 105
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 106
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 107
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 108
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 109
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 110
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 111
+
+ Data for node: node170	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 112
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 113
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 114
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 115
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 116
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 117
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 118
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 119
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 120
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 121
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 122
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 123
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 124
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 125
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 126
+ 	Process OMPI jobid: [34671,1] App: 0 Process rank: 127
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_PETSc_Hypre_128
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_PETSc_Hypre_128
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 9.760745
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 0 ... 
+	Solve Time: 2.478882
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 1 ... 
+	Solve Time: 2.477348
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 2 ... 
+	Solve Time: 2.485008
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 3 ... 
+	Solve Time: 2.485618
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 4 ... 
+	Solve Time: 2.487227
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 5 ... 
+	Solve Time: 2.486772
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 6 ... 
+	Solve Time: 2.508333
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 7 ... 
+	Solve Time: 2.486307
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 8 ... 
+	Solve Time: 2.631072
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+Run # 9 ... 
+	Solve Time: 2.496434
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 16
+
+The averaged solving time is: 2.502300
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_PETSc_Hypre_128
+------------------------------------------------------------------------
+========================================================================

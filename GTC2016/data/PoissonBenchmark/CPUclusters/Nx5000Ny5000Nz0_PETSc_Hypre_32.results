@@ -1,0 +1,121 @@
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [32344,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node118	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 15
+
+ Data for node: node166	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 16
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 17
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 18
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 19
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 20
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 21
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 22
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 23
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 24
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 25
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 26
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 27
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 28
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 29
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 30
+ 	Process OMPI jobid: [32344,1] App: 0 Process rank: 31
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx5000Ny5000Nz0_PETSc_Hypre_32
+Nx: 5000
+Ny: 5000
+Nz: 0
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx5000Ny5000Nz0_PETSc_Hypre_32
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 7.778811
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 0 ... 
+	Solve Time: 4.034111
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 1 ... 
+	Solve Time: 4.033911
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 2 ... 
+	Solve Time: 4.036311
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 3 ... 
+	Solve Time: 4.034901
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 4 ... 
+	Solve Time: 4.035371
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 5 ... 
+	Solve Time: 4.033773
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 6 ... 
+	Solve Time: 4.055598
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 7 ... 
+	Solve Time: 4.047854
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 8 ... 
+	Solve Time: 4.035681
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+Run # 9 ... 
+	Solve Time: 4.036042
+	L2-Norm: 0.000735633
+	Max-Norm: 2.63189e-07
+	Iterations 16
+
+The averaged solving time is: 4.038355
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx5000Ny5000Nz0_PETSc_Hypre_32
+------------------------------------------------------------------------
+========================================================================

@@ -1,0 +1,555 @@
+Sun Feb 21 14:38:07 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   23C    P0    31W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   23C    P0    51W / 225W |     12MiB /  4799MiB |     69%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ Data for JOB [57435,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node334	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 1
+
+ Data for node: node340	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 3
+
+ Data for node: node341	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 5
+
+ Data for node: node343	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 7
+
+ Data for node: node344	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 9
+
+ Data for node: node350	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 11
+
+ Data for node: node351	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 13
+
+ Data for node: node352	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [57435,1] App: 0 Process rank: 15
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_AmgX_Classical_16
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_AmgX_Classical_16
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+License acquired, proceeding
+License acquired, proceeding
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+License acquired, proceeding
+License acquired, proceeding
+AMG Grid:
+         Number of Levels: 7
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)     25000000         174450000  2.79e-07           2.78
+           1(D)     12383167         184120899   1.2e-06           4.86
+           2(D)      6004338         407358452  1.13e-05           10.5
+           3(D)      1111199         268455033  0.000217           8.24
+           4(D)       114372          50103516   0.00383           2.38
+           5(D)         8072           4627522     0.071          0.687
+           6(D)          487            189133     0.797         0.0672
+         --------------------------------------------------------------
+         Grid Complexity: 1.78487
+         Operator Complexity: 6.24422
+         Total Memory Usage: 29.4606 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 0.857451
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852265
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.854282
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852094
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852538
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.853481
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852829
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852538
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852386
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852027
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852871
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+
+The averaged solving time is: 0.852731
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_AmgX_Classical_16
+------------------------------------------------------------------------
+========================================================================
+Sun Feb 21 14:46:22 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   24C    P0    48W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   23C    P0    51W / 225W |     12MiB /  4799MiB |     99%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ Data for JOB [57484,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node334	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 1
+
+ Data for node: node340	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 3
+
+ Data for node: node341	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 5
+
+ Data for node: node343	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 7
+
+ Data for node: node344	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 9
+
+ Data for node: node350	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 11
+
+ Data for node: node351	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 13
+
+ Data for node: node352	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [57484,1] App: 0 Process rank: 15
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_AmgX_Classical_16
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_AmgX_Classical_16
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+License acquired, proceeding
+License acquired, proceeding
+AMG Grid:
+         Number of Levels: 7
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)     25000000         174450000  2.79e-07           2.78
+           1(D)     12383167         184120899   1.2e-06           4.86
+           2(D)      6004338         407358452  1.13e-05           10.5
+           3(D)      1111199         268455033  0.000217           8.24
+           4(D)       114372          50103516   0.00383           2.38
+           5(D)         8072           4627522     0.071          0.687
+           6(D)          487            189133     0.797         0.0672
+         --------------------------------------------------------------
+         Grid Complexity: 1.78487
+         Operator Complexity: 6.24422
+         Total Memory Usage: 29.4606 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 0.856221
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.855948
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.853774
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852758
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852665
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.853813
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.853682
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852506
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.853243
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852510
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.852202
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+
+The averaged solving time is: 0.853310
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_AmgX_Classical_16
+------------------------------------------------------------------------
+========================================================================
+Sun Feb 21 16:49:49 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   25C    P0    49W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   25C    P0    49W / 225W |     12MiB /  4799MiB |     81%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ Data for JOB [65391,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node002	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 1
+
+ Data for node: node003	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 3
+
+ Data for node: node004	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 5
+
+ Data for node: node005	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 7
+
+ Data for node: node011	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 9
+
+ Data for node: node012	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 11
+
+ Data for node: node028	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 13
+
+ Data for node: node029	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [65391,1] App: 0 Process rank: 15
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx500Ny250Nz200_AmgX_Classical_16
+Nx: 500
+Ny: 250
+Nz: 200
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx500Ny250Nz200_AmgX_Classical_16
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+License acquired, proceeding
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+License acquired, proceeding
+Cannot read file as JSON object, trying as AMGX config
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+License acquired, proceeding
+AMG Grid:
+         Number of Levels: 7
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)     25000000         174450000  2.79e-07           2.78
+           1(D)     12383167         184120899   1.2e-06           4.86
+           2(D)      6004338         407358452  1.13e-05           10.5
+           3(D)      1111199         268455033  0.000217           8.24
+           4(D)       114372          50103516   0.00383           2.38
+           5(D)         8072           4627522     0.071          0.687
+           6(D)          487            189133     0.797         0.0672
+         --------------------------------------------------------------
+         Grid Complexity: 1.78487
+         Operator Complexity: 6.24422
+         Total Memory Usage: 29.4606 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 0.870963
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865085
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865004
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.864714
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865999
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865757
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865752
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865669
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.864926
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.866674
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 0.865229
+	L2-Norm: 0.261662
+	Max-Norm: 9.86764e-05
+	Iterations 25
+
+The averaged solving time is: 0.865481
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx500Ny250Nz200_AmgX_Classical_16
+------------------------------------------------------------------------
+========================================================================

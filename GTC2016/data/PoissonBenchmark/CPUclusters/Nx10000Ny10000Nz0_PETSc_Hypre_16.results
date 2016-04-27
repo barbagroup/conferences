@@ -1,0 +1,103 @@
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [53016,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node182	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [53016,1] App: 0 Process rank: 15
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx10000Ny10000Nz0_PETSc_Hypre_16
+Nx: 10000
+Ny: 10000
+Nz: 0
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_Hypre.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx10000Ny10000Nz0_PETSc_Hypre_16
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 66.271848
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 0 ... 
+	Solve Time: 27.133237
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 1 ... 
+	Solve Time: 27.131651
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 2 ... 
+	Solve Time: 27.123154
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 3 ... 
+	Solve Time: 27.131120
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 4 ... 
+	Solve Time: 27.126436
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 5 ... 
+	Solve Time: 27.125660
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 6 ... 
+	Solve Time: 27.120751
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 7 ... 
+	Solve Time: 27.119563
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 8 ... 
+	Solve Time: 27.122423
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+Run # 9 ... 
+	Solve Time: 27.116733
+	L2-Norm: 0.000367791
+	Max-Norm: 6.57945e-08
+	Iterations 14
+
+The averaged solving time is: 27.125073
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx10000Ny10000Nz0_PETSc_Hypre_16
+------------------------------------------------------------------------
+========================================================================

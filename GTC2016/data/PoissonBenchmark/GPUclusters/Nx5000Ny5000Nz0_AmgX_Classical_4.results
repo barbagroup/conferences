@@ -1,0 +1,151 @@
+Sun Feb 21 15:02:24 2016       
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.63     Driver Version: 352.63         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K20m          Off  | 0000:03:00.0     Off |                    0 |
+| N/A   24C    P0    47W / 225W |     12MiB /  4799MiB |      0%   E. Process |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K20m          Off  | 0000:83:00.0     Off |                    0 |
+| N/A   24C    P0    50W / 225W |     12MiB /  4799MiB |     98%   E. Process |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+ Data for JOB [45470,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node337	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [45470,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [45470,1] App: 0 Process rank: 1
+
+ Data for node: node346	Num slots: 2	Max slots: 0	Num procs: 2
+ 	Process OMPI jobid: [45470,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [45470,1] App: 0 Process rank: 3
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx5000Ny5000Nz0_AmgX_Classical_4
+Nx: 5000
+Ny: 5000
+Nz: 0
+Mode: AmgX
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/AmgX_SolverOptions_Classical.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx5000Ny5000Nz0_AmgX_Classical_4
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+License acquired, proceeding
+AMGX version 1.2.0-build108
+Built on Dec 22 2014, 10:33:38
+Compiled with CUDA Runtime 6.5, using CUDA driver 7.5
+License acquired, proceeding
+Cannot read file as JSON object, trying as AMGX config
+Cannot read file as JSON object, trying as AMGX config
+Converting config string to current config version
+Parsing configuration string: exception_handling=1 ; 
+License acquired, proceeding
+License acquired, proceeding
+AMG Grid:
+         Number of Levels: 9
+            LVL         ROWS               NNZ    SPRSTY       Mem (GB)
+         --------------------------------------------------------------
+           0(D)     25000000         124980000     2e-07           2.14
+           1(D)     12497500         112484756   7.2e-07           3.03
+           2(D)      3123324          79598504  8.16e-06           1.92
+           3(D)       774419          33148841  5.53e-05          0.783
+           4(D)       183575           9686451  0.000287          0.231
+           5(D)        30732           1947274   0.00206         0.0484
+           6(D)         4561            269965     0.013         0.0076
+           7(D)          603             30143    0.0829        0.00119
+           8(D)           77              2567     0.433       0.000203
+         --------------------------------------------------------------
+         Grid Complexity: 1.66459
+         Operator Complexity: 2.89765
+         Total Memory Usage: 8.16587 GB
+         --------------------------------------------------------------
+Warm-up cycle ... 
+Relative residual has reached machine precision
+	Solve Time: 1.475203
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 0 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.468899
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 1 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.468796
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 2 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469272
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 3 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.468617
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 4 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469358
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 5 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469487
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 6 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.468941
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 7 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469080
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 8 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469264
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+Run # 9 ... 
+Relative residual has reached machine precision
+	Solve Time: 1.469236
+	L2-Norm: 0.000735651
+	Max-Norm: 2.63193e-07
+	Iterations 24
+
+The averaged solving time is: 1.469095
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx5000Ny5000Nz0_AmgX_Classical_4
+------------------------------------------------------------------------
+========================================================================

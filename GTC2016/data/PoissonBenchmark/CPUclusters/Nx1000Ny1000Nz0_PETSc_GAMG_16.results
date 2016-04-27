@@ -1,0 +1,103 @@
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+ Data for JOB [50706,1] offset 0
+
+ ========================   JOB MAP   ========================
+
+ Data for node: node166	Num slots: 16	Max slots: 0	Num procs: 16
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 0
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 1
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 2
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 3
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 4
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 5
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 6
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 7
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 8
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 9
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 10
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 11
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 12
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 13
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 14
+ 	Process OMPI jobid: [50706,1] App: 0 Process rank: 15
+
+ =============================================================
+
+========================================================================
+------------------------------------------------------------------------
+Case Name: Nx1000Ny1000Nz0_PETSc_GAMG_16
+Nx: 1000
+Ny: 1000
+Nz: 0
+Mode: PETSc
+Config File: /home/pychuang/AmgXWrapper/tests/benchmarks/configs/PETSc_SolverOptions_GAMG.info
+Number of Solves: 10
+Output PETSc Log File ? 1
+Output PETSc Log File Name: /home/pychuang/AmgXWrapper/tests/benchmarks/logs/Nx1000Ny1000Nz0_PETSc_GAMG_16
+Output VTK file ? 0
+------------------------------------------------------------------------
+========================================================================
+Warm-up cycle ... 
+	Solve Time: 1.039375
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 0 ... 
+	Solve Time: 0.550373
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 1 ... 
+	Solve Time: 0.550611
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 2 ... 
+	Solve Time: 0.550558
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 3 ... 
+	Solve Time: 0.550436
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 4 ... 
+	Solve Time: 0.550901
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 5 ... 
+	Solve Time: 0.550381
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 6 ... 
+	Solve Time: 0.550858
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 7 ... 
+	Solve Time: 0.550298
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 8 ... 
+	Solve Time: 0.551034
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+Run # 9 ... 
+	Solve Time: 0.550846
+	L2-Norm: 0.00367816
+	Max-Norm: 6.57968e-06
+	Iterations 19
+
+The averaged solving time is: 0.550630
+
+========================================================================
+------------------------------------------------------------------------
+End of Nx1000Ny1000Nz0_PETSc_GAMG_16
+------------------------------------------------------------------------
+========================================================================
