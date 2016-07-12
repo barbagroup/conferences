@@ -1,0 +1,38 @@
+NVIDIA's AmgX library can handle our need in a helpful way.
+It provides varying linear solvers and multigrid on multiple GPUs
+and is free for non-commercial use.
+AmgX, however, has different data structures and usage from PETSc,
+so it will not be a simple task to apply AmgX in existing PETSc applications.
+Furthermore,
+since there are many calculations remaining on CPU,
+we want to launch PETSc applications with as many CPU cores as possible;
+but numbers of GPUs are typically not as many as that of CPU cores,
+meaning data and linear systems need to be merged and scattered
+before and after calling AmgX solvers.
+All these indicate many modifications in those PETSc applications, 
+which is what we tried to avoid.
+
+We wrote a wrapper code to couple AmgX and PETSc. 
+This wrapper features a simple usage and ability to exploit all available
+CPU and GPU resources.
+It hides all MPI communications, 
+data conversions, 
+data transfer between CPU and GPU, 
+and memory allocations from users.
+In most scenarios,
+users can directly replace PETSc's
+\lstinline[language=C++, basicstyle=\ttfamily]|KSPSetOperators| and 
+\lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| 
+with
+\lstinline[language=C++, basicstyle=\ttfamily]|setA(A)| and
+\lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)| 
+provided in the wrapper.
+\lstinline[language=C++, basicstyle=\ttfamily]|A|,
+\lstinline[language=C++, basicstyle=\ttfamily]|x|, and
+\lstinline[language=C++, basicstyle=\ttfamily]|rhs|
+remain PETSc matrix and vectors before and after calling the wrapper.
+Users need no other coding effort.
+Setting up the properties of the solvers, 
+such as type of solvers and preconditioners,
+can be done by an user-provided input text script at runtime.
+

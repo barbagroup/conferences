@@ -1,0 +1,26 @@
+The starting point of this work is a desire to 
+accelerate existing PETSc-based CFD codes with multi-GPU computing.
+For those whose research focuses on CFD simulations 
+instead of software development or computer science,
+rewriting whole code with low level GPU languages may be the least thing they want.
+As the most expensive part in CFD codes is typically solving Poisson-like systems,
+tackling only this part with libraries providing multi-GPU linear solvers, 
+such as NVIDIA's AmgX,
+is more acceptable.
+The goal here is to write a wrapper to bridge AmgX and PETSc 
+so that users can make their existing PETSc-based CFD codes running on modern heterogeneous platforms
+and, at the mean time, with only simple modifications in their code.
+
+In additions, we wonder the overall benefits the multi-GPU computing can give us.
+While speed-up\footnotemark is always our top concern,
+we are also curious about other possible benefits, such as cost saving or hardware saving.
+Therefore, we performed a series of benchmarks beside the coding task of the wrapper for this purpose.
+
+\footnotetext{
+    Speed-ups in our works refer to {\it application speed-ups}: 
+    directly replace PETSc linear solvers with AmgX solvers in an application
+    and see what acceleration the application can have. 
+    In other words, 
+    these application speed-ups represent the overall reductions of run times 
+    that users of the applications can experience.
+}

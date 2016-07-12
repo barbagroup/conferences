@@ -1,0 +1,83 @@
+We present three benchmakrs in the poster:
+
+\subsection{Poisson systems:}
+
+    The Poisson-like systems in many CFD codes are just regular Poisson equations.
+    So this benchmake provides a reference to those 
+    whose CFD codes solve regular Poisson systems.
+    For this purpose,
+    we only timed the run time of solving behavior, that is, the
+    \lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| and the
+    \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)| function calls.
+    As the
+    \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)| function call
+    includes MPI communications, 
+    data conversion of the two libraries, 
+    and data transfer between CPU and GPU,
+    timing the
+    \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)| function
+    can give us an overall performance, 
+    instead of only solving behavior on GPUs.
+
+    Both CPU and GPU solvers are conjugate-gradient solvers.
+    The preconditioner of the CPU solver is Hypre BoomerAMG (through PETSc's interface).
+    And the preconditioner of the GPU solver is classical algebraic multigrid, 
+    which is claimed to be a GPU implementation of Hypre BoomerAMG in AmgX manual.
+
+    The result shows that, for the cases of 25M unknowns,
+    four NVIDIA K20s\footnotemark[2] can compete with about 100 CPU\footnotemark[3] cores in 2D problems;
+    in 3D, eight K20s can compete with about 256 CPUs.
+    For 2D problems with 100M unknowns and 3D problems with 50M unknowns,
+    32 K20s can compete with about 400 CPU cores.
+
+\subsection{Flying snake simulations -- an application of PetIBM:}
+
+    PetIBM is our own parallel CFD code utilizing PETSc. 
+    We implemented Taira and Colonius' method in PetIBM, 
+    in which a modified Poisson system is solved at each time step.
+    Solving this modified Poisson system takes over 90\% of run rime in PetIBM.
+    This benchmark intends to show how multi-GPU computing can accelerate
+    a real PETSc-based CFD code through a real application -- flying snake.
+
+    For the purpose of a fair comparison,
+    the GPU cluster we used is actually the same as CPU cluster but with two additional K20s on each node.
+    Each node has 12 physical CPU cores.
+    We also run the benchmark on a workstation, 
+    in which there are 6 physical CPU cores and up to two K40c GPUs.
+
+    To get the best run times, 
+    we used conjugate-gradient solvers and aggregation multigrid as preconditioners on GPU cases.
+    For CPU cases,
+    we used stabilized biconjugate-gradient solvers and GAMG preconditioners,
+    given that, to the best of our knowledge, 
+    there is no counterpart implementation of AmgX's aggregation multigrid in PETSc,
+    and stabilized biconjugate-gradient method 
+    combined with GAMG preconditioners is the fasted we can get with PETSc.
+
+    The result shows that the overall speed-up provided by one-node GPU cluster
+    is comparable with about 20-node CPU cluster; 
+    and a workstation with 1 K40c can compete with a 16-node CPU cluster.
+
+\subsection{Amazon EC2:}
+
+    Based on the result of previous benchmark,
+    we believe that multi-GPU computing can also benefit us more apart from speed-ups.
+    With capability of multi-GPU computing,
+    we should be able to size down the clusters required for running simulations.
+    This implies a saving on money cost for simulations.
+    We hence performed the same flying snake simulations on Amazon EC2
+    to give an example of this cost saving.
+
+    On Amazon EC2, we ran one simulation on 8-node CPU cluster (c4.8xlarge)
+    and one simulation on one GPU node (g2.8xlarge). 
+    The result shows both a 3.1x speed-up and a 16x cost saving.
+
+\footnotetext[2]{
+    The number of GPUs presented in text is the minimum number of GPUs needed 
+    due to limited memory on a single GPU.
+}
+
+\footnotetext[3]{
+    The comparable numbers of CPU cores are estimated based on 
+    good scaling property shown in the benchmarks (see figures on the poster).
+}

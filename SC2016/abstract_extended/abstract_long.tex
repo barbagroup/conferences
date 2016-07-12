@@ -1,5 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \usepackage{cite}
+\usepackage{listings}
+\usepackage{color}
 
 % *** GRAPHICS RELATED PACKAGES ***
 \ifCLASSINFOpdf
@@ -65,55 +67,23 @@
 
 
 % abstract
-\begin{abstract}
-    We wrote a wrapper code to couple PETSc and AmgX libraries in order to utilize AmgX's multi-GPU linear solvers in arbitrary PETSc-based applications.
-    The wrapper features a simple usage (with normally only two function calls) and capability to exploit all available CPU and GPU resources,
-    which is accomplished through converting data structures implicitly between the two libraries,
-    hiding MPI communications,
-    and merging sub-systems without users' knowing.
-    We performed benchmarks to understand application speed-ups after incorporating multi-GPU capability in PETSc applications. 
-    Results of benchmarks suggest that, with multi-GPU computing, we can save 
-    1) run times and hardware cost (e.g.\ a 6-CPU-core workstation with 1 NVIDIA K40c can compete with a 16-node CPU cluster); and
-    2) cloud HPC cost (e.g.\ a benchmark on Amazon EC2 shows a 16x cost saving between CPU and GPU clusters)
-    of scientific simulations.
-\end{abstract}
-
-% keywords
-\begin{IEEEkeywords}
-    Multiple GPU, PETSc, AmgX, CFD
-\end{IEEEkeywords}
 
 
 % start the article
-\section{Introduction}
+\section{Motivations}
+    \input{secI_introduction}
 
-Researchers have been developing and running 
-PETSc\cite{petsc-web-page, petsc-user-ref, petsc-efficient} 
-applications for scientific simulations on CPU clusters for over 20 years.
-As GPU computing becomes popular nowadays, 
-running scientific simulations on heterogeneous platforms and exploit all CPU and GPU resources may be desired.
-PETSc, however, still doesn't have satisfying support of multi-GPU computing,
-so moving those mature PETSc applications from CPU platforms to heterogeneous platforms may be tricky.
+\section{AmgX and AmgX wrapper}
+    \input{secII_wrapper}
 
-
-
-
-
-
-\subsection{Subsection Heading Here}
-Subsection text here.
-
-
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+\section{Benchmarks and results}
+    \input{secIII_benchmarks}
 
 \section{Conclusion}
-The conclusion goes here.
+    \input{secIV_conclusion}
 
 
 
-
-% conference papers do not normally have an appendix
 
 
 % use section* for acknowledgment

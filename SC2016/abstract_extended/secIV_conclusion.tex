@@ -1,0 +1,14 @@
+With our wrapper,
+which bridges PETSc and AmgX,
+existing PETSc-based CFD codes can now exploit all CPU and GPU resources with affordable coding effort
+by simplily replacing PETSc's
+\lstinline[language=C++, basicstyle=\ttfamily]|KSPSetOperators| and 
+\lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| 
+with our wrapper's
+\lstinline[language=C++, basicstyle=\ttfamily]|setA| and
+\lstinline[language=C++, basicstyle=\ttfamily]|solve|. 
+We believe the wrapper can help those who want migrate their existing CFD codes to modern heterogeneous platforms but try to avoid significant modifications in the codes.
+
+In additions, the benchmarks suggest that multi-GPU computing 
+can size down the cluster systems required and money cost for scientific simulations.
+These benefits are attractive to researchers who have limited hardware resources for their scientific simulations.
