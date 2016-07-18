@@ -1,21 +1,23 @@
 NVIDIA's AmgX library can handle our need in a helpful way.
-It provides varying iterative solvers and multigrid on multiple GPUs and is free for non-commercial use.
+It provides varying iterative solvers and multigrid on multiple GPUs and is 
+free for non-commercial use.
 AmgX, however, has different data structures and usages from PETSc.
 Applying AmgX in existing PETSc applications would be an annoying task.
-Furthermore, 
-since many calculations other than linear solvers may remain on CPUs,
+Furthermore, since many calculations other than linear solvers may remain on CPUs,
 users may want to launch simulations with as many CPU cores as possible;
-but numbers of GPUs are typically fewer than that of CPU cores on a heterogenerous platform,
-meaning data and linear systems on CPUs need to be merged and scattered
-before and after calling solvers on GPUs.
+but numbers of GPUs are typically fewer than that of CPU cores on a 
+heterogenerous platform,
+meaning data and linear systems on CPUs need to be merged and scattered before 
+and after calling solvers on GPUs.
 All these indicate a nontrivial modification in those existing CFD codes, 
 which is what we tried to avoid.
 
 We wrote a wrapper code to couple AmgX and PETSc. 
-This wrapper features a simple usage and capability to exploit all available CPU and GPU resources.
-It hides all MPI communications, data conversions, data transfer between CPU and GPU, and memory allocations from users.
-In most scenarios,
-users can directly replace PETSc's
+This wrapper features a simple usage and capability to exploit all available CPU 
+and GPU resources.
+It hides all MPI communications, data conversions, data transfer between CPU 
+and GPU, and memory allocations from users.
+In most scenarios, users can directly replace PETSc's
 \lstinline[language=C++, basicstyle=\ttfamily]|KSPSetOperators| and 
 \lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| 
 with the wrapper's
@@ -26,5 +28,6 @@ with the wrapper's
 \lstinline[language=C++, basicstyle=\ttfamily]|rhs|
 remain PETSc matrix and vectors before and after calling the wrapper.
 Users need no other coding effort.
-Setting up the properties of the solvers (e.g. type of solvers and preconditioners) can be done by an user-specified input script at runtime.
+Setting up the properties of the solvers (e.g.\ type of solvers and 
+preconditioners) can be done by an user-specified input script at runtime.
 
