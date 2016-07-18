@@ -4,7 +4,7 @@ We present three benchmakrs in the poster:
 
     \subsubsection{Description}
     The Poisson-like systems in many CFD codes are just regular Poisson equations.
-    So this benchmake provides a reference to those whose CFD codes solve regular Poisson systems.
+    So this benchmark provides a reference to those whose CFD codes solve regular Poisson systems.
     For this purpose,
     we only timed the run time of solving behavior, that is, the
     \lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| and the
@@ -16,7 +16,7 @@ We present three benchmakrs in the poster:
     and data transfer between CPUs and GPUs,
     timing the
     \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)| function
-    can give us an overall performance, 
+    can give us an overall performance of our wrapper, 
     instead of only solving behavior on GPUs.
 
     Both CPU and GPU solvers are conjugate-gradient solvers.
@@ -36,7 +36,7 @@ We present three benchmakrs in the poster:
     \subsubsection{Description}
     This benchmark intends to show how multi-GPU computing can accelerate
     a real PETSc-based CFD code through a real application.
-    The CFD code we choosed is PetIBM\cite{petibm-repo}, 
+    The CFD code we chose is PetIBM\cite{petibm-repo}, 
     and the application is a simulation of flying snakes\cite{Krishnan-2013-ID33}.
 
     PetIBM, our own PETSc-based CFD code, has a Navier-Stokes solver based on Taira and Colonius' method\cite{Taira-2007-ID69}, in which a modified Poisson system is solved at each time step.
