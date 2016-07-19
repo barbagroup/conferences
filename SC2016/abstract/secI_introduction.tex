@@ -7,12 +7,12 @@ tackling only this part with libraries providing multi-GPU linear solvers,
 such as NVIDIA's AmgX\cite{amgx-web-page}, is more acceptable.
 The goal here is to write a wrapper to bridge AmgX and PETSc so that users can 
 make their existing PETSc-based CFD codes running on modern heterogeneous platforms
-and, at the mean time, with only simple modifications in their code.
+and, at the mean time, with only simple modifications in their codes.
 
 In additions, we wondered the overall benefits the multi-GPU computing can give us.
-While speed-up\footnotemark is always our top concern, we were also curious 
+While speed-up\footnotemark was our top concern, we were also curious 
 about other possible benefits, such as cost savings or hardware savings.
-Therefore, we performed a series of benchmarks beside the coding task of the 
+Therefore, we carried out a series of benchmarks beside the coding task of the 
 wrapper for this purpose.
 
 \footnotetext{
