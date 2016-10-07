@@ -1,29 +1,27 @@
 We present three benchmakrs in the poster:
 
-\subsection{Poisson systems}
+\subsection{Standard Poisson systems}
 
     \subsubsection{Description}
-    The linear systems in many CFD codes originate from regular Poisson equations.
     This benchmark provides a reference to users whose CFD codes solve standard Poisson systems.
-    For this purpose, we measured only the run time needed to solve the system, that is, the calls to
+    For this purpose, we measured only the run time of solving the system, that is, the calls to
     \lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| and
     \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)|.
     The  function \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)|
-    covers MPI communications, data conversion of the two libraries, 
-    and data transfer between CPUs and GPUs,
-    so timing the calls to this
+    covers MPI communications and data conversion and transfer,
+    so timing the call to this
     function gives a performance indication of our wrapper, rather than only 
     of the solution behavior on GPUs.
 
     The benchmarks use conjugate-gradient solvers on both CPUs and GPUs.
     The preconditioner for the CPU solver is Hypre BoomerAMG 
     (through PETSc's interface),
-    whereas the preconditioner of the GPU solver is classical algebraic multigrid--- 
+    whereas the preconditioner of the GPU solver is classical algebraic multigrid -- 
     described as a GPU implementation of Hypre BoomerAMG in the AmgX
     manual\cite[see][p.130]{amgx-manual}.
 
     \subsubsection{Results}
-    The results show that, with 25M unknowns,
+    With 25M unknowns,
     four\footnotemark[2] NVIDIA K20s can compete with about 100\footnotemark[3] 
     CPU cores in 2D problems;
     in 3D, eight K20s can compete with about 256 CPUs.
@@ -60,7 +58,7 @@ We present three benchmakrs in the poster:
     the best result in this case.
 
     \subsubsection{Results}
-    The results show that the overall speed-up provided by only one GPU node is 
+    The overall speed-up provided by only one GPU node is 
     competitive with about 20 nodes of a CPU cluster. 
     On a workstation, one K40c GPU can compete with about 16 nodes of a CPU cluster.
 
@@ -76,7 +74,7 @@ We present three benchmakrs in the poster:
     versus a single GPU node (g2.8xlarge). 
 
     \subsubsection{Results}
-    The result indiates a 3.1x speed-up and a 16x cost saving on Amazon EC2
+    The result indicates a 3.1x speed-up and a 16x cost saving on Amazon EC2
     when exploiting the GPU nodes.
 
 \footnotetext[2]{
