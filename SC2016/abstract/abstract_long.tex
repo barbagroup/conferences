@@ -1,0 +1,98 @@
+\documentclass[conference]{IEEEtran}
+%\usepackage{cite}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage[style=ieee]{biblatex}
+\addbibresource{SC16.bib}
+
+% *** GRAPHICS RELATED PACKAGES ***
+\ifCLASSINFOpdf
+    \usepackage[pdftex]{graphicx}
+    \graphicspath{{../}}
+    \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+    \usepackage[dvips]{graphicx}
+    \graphicspath{{../}}
+    \DeclareGraphicsExtensions{.eps}
+\fi
+
+% *** MATH PACKAGES ***
+\usepackage{amsmath}
+\interdisplaylinepenalty=2500
+
+% *** SPECIALIZED LIST PACKAGES ***
+\usepackage{algorithmic}
+
+% *** ALIGNMENT PACKAGES ***
+\usepackage{array}
+
+% *** SUBFIGURE PACKAGES ***
+\ifCLASSOPTIONcompsoc
+    \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\else
+    \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
+
+% *** FLOAT PACKAGES ***
+\usepackage{stfloats}
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+% title
+\title{Accelerating PETSc-Based CFD Codes with Multi-GPU Computing}
+% author names and affiliations
+\author{
+    \IEEEauthorblockN{Pi-Yueh Chuang}
+    \IEEEauthorblockA{
+        Mechanical and Aerospace Engineering\\
+        The George Washington University\\
+        Washington, DC 20052\\
+        Email: pychuang@gwu.edu}
+    \and
+    \IEEEauthorblockN{Lorena A. Barba}
+    \IEEEauthorblockA{
+        Mechanical and Aerospace Engineering\\
+        The George Washington University\\
+        Washington, DC 20052\\
+        Email: labarba@gwu.edu}}
+
+% make the title area
+\maketitle
+
+
+% abstract
+
+
+% start the article
+\section{Motivation}
+    \input{secI_introduction}
+
+\section{A{\normalfont mg}X and A{\normalfont mg}X wrapper}
+    \input{secII_wrapper}
+
+\section{Benchmarks and results}
+    \input{secIII_benchmarks}
+
+\section{Conclusion}
+    \input{secIV_conclusion}
+
+
+
+
+
+% use section* for acknowledgment
+
+\renewcommand*{\UrlFont}{\rmfamily}
+\printbibliography
+
+\end{document}
+
+

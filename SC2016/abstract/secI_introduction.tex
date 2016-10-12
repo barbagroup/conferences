@@ -1,0 +1,28 @@
+The motivation of this work is a desire to accelerate existing 
+PETSc\cite{petsc-web-page}-based CFD (computational fluid dynamics) codes with multi-GPU computing.
+Rewriting their code base with CUDA or OpenCL may be onerous
+for researchers who focus more on the application of CFD, rather than high-performance computing.
+Typically, the most expensive part in CFD codes is solving Poisson-like systems,
+for which NVIDIA's AmgX\cite{amgx-web-page} library provides multi-GPU solvers and preconditioners.
+We present a wrapper code to bridge AmgX and PETSc so that users can 
+run their existing PETSc-based CFD codes on modern heterogeneous platforms, 
+with minimal code changes.
+Not only does the wrapper code handle converting between AmgX and PETSc
+data structures, but it also effectively takes care of the situation where the number
+of MPI processes is different than the number of GPUs.
+
+We assessed the overall benefits of using multi-GPU systems in CFD applications
+when replacing PETSc with AmgX.
+While application speed-up\footnotemark was our top concern, we also studied 
+other possible benefits, such as savings in terms of hardware and cost.
+To determine such benefits, we used Poisson systems in 2D and 3D as benchmarks
+and also a CFD application with our open-source code, PetIBM.
+
+\footnotetext{
+    ``Speed-up'' in this work refers to {\it application speed-up}: 
+    the acceleration that results from directly replacing PETSc linear solvers 
+    with AmgX solvers in an application.
+    In other words, 
+    these application speed-ups represent the overall reductions of run times 
+    that users of the applications can experience.
+}

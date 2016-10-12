@@ -1,0 +1,89 @@
+We present three benchmakrs in the poster:
+
+\subsection{Standard Poisson systems}
+
+    \subsubsection{Description}
+    This benchmark provides a reference to users whose CFD codes solve standard Poisson systems.
+    For this purpose, we measured only the run time of solving the system, that is, the calls to
+    \lstinline[language=C++, basicstyle=\ttfamily]|KSPSolve| and
+    \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)|.
+    The  function \lstinline[language=C++, basicstyle=\ttfamily]|solve(x, rhs)|
+    covers MPI communications and data conversion and transfer,
+    so timing the call to this
+    function gives a performance indication of our wrapper, rather than only 
+    of the solution behavior on GPUs.
+
+    The benchmarks use conjugate-gradient solvers on both CPUs and GPUs.
+    The preconditioner for the CPU solver is Hypre BoomerAMG 
+    (through PETSc's interface),
+    whereas the preconditioner of the GPU solver is classical algebraic multigrid -- 
+    described as a GPU implementation of Hypre BoomerAMG in the AmgX
+    manual\cite[see][p.130]{amgx-manual}.
+
+    \subsubsection{Results}
+    With 25M unknowns,
+    four\footnotemark[2] NVIDIA K20s can compete with about 100\footnotemark[3] 
+    CPU cores in 2D problems;
+    in 3D, eight K20s can compete with about 256 CPUs.
+    For 2D problems with 100M unknowns and 3D problems with 50M unknowns,
+    32 K20s can compete with about 400 CPU cores.
+
+\subsection{Flying snake simulations -- an application of PetIBM}
+
+    \subsubsection{Description}
+    This benchmark intends to show how multi-GPU computing can accelerate a real
+    PETSc-based CFD code through an actual application.
+    The CFD code we chose is PetIBM\cite{petibm-repo}, 
+    and the application is simulating the flow around a flying-snake's cross-section\cite{Krishnan-2013-ID33}.
+
+    PetIBM, our group's PETSc-based CFD code, offers a Navier-Stokes solver based on 
+    the formulation of Taira and Colonius\cite{Taira-2007-ID69}, in which a modified 
+    Poisson system is solved at each time step.
+    Solving this modified Poisson system takes over 90\% of run rime on CPUs.
+    We only applied multi-GPU linear solvers on this part, while keeping all other
+    calculations on CPUs.
+
+    We attempt a fair comparison using the same nodes of the cluster, with
+    the GPU runs exploiting two available NVIDIA K20s on each node
+    (each node has 12 physical CPU cores).
+    We also ran the benchmark on a workstation, having 6 physical 
+    CPU cores and up to two NVIDIA K40c GPUs.
+
+    We obtain the best run times on the GPU cases with conjugate-gradient solvers and 
+    aggregation multigrid preconditioners.
+    For the CPU cases, we used stabilized biconjugate-gradient solvers and GAMG 
+    preconditioners, given that (to the best of our knowledge) there is no 
+    counterpart implementation of aggregation multigrid in PETSc,
+    and the combination of stabilized biconjugate-gradient and GAMG gave 
+    the best result in this case.
+
+    \subsubsection{Results}
+    The overall speed-up provided by only one GPU node is 
+    competitive with about 20 nodes of a CPU cluster. 
+    On a workstation, one K40c GPU can compete with about 16 nodes of a CPU cluster.
+
+\subsection{Amazon EC2}
+
+    \subsubsection{Description}
+    The previous benchmark shows that enabling multi-GPU computing in a CFD code can
+    size down the clusters required for running simulations.
+    This comes with a cost saving to research based on CFD simulations.
+    We experimented with the same flying-snake simulations on Amazon EC2 to give 
+    an example of the cost savings.
+    We compared the simulation executed on an 8-node CPU cluster (c4.8xlarge)
+    versus a single GPU node (g2.8xlarge). 
+
+    \subsubsection{Results}
+    The result indicates a 3.1x speed-up and a 16x cost saving on Amazon EC2
+    when exploiting the GPU nodes.
+
+\footnotetext[2]{
+    The number of GPUs presented in the text is the minimum number of GPUs needed 
+    due to limited memory on a single GPU.
+}
+
+\footnotetext[3]{
+    The comparable numbers of CPU cores are estimated based on 
+    good scaling shown in the benchmarks (see figures on the poster).
+    This is a conservative estimate for our purposes (i.e., favors the CPU case).
+}
