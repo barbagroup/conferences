@@ -71,8 +71,9 @@ Immersed Boundary Method\sep \texttt{PETSc}\sep \texttt{AmgX} \sep flying snake
 
 \section{PetIBM and AmgXWrapper}
 
-We have developed \texttt{PetIBM}\footnote{\texttt{PetIBM}: https://github.com/barbagroup/PetIBM} that implements using the \texttt{PETSc}\footnote{\texttt{PETSc}: https://www.mcs.anl.gov/petsc} library, an immersed-boundary method (IBM) \cite{Taira_Colonius_2007} in which the fully discrete algebraic system is solved via a projection method based on an approximate block-LU decomposition.
-The data structures and routines provided by the \texttt{PETSc} library allowed us to rapidly develop a software that runs on distributed-memory architectures.
+We have developed \texttt{PetIBM}\footnote{\texttt{PetIBM}: https://github.com/barbagroup/PetIBM}, a code that implements an immersed boundary method (IBM) using the \texttt{PETSc}\footnote{\texttt{PETSc}: https://www.mcs.anl.gov/petsc} library .
+The projection method by Taira and Colonius\cite{Taira_Colonius_2007} results in a fully discrete algebraic system that is solved via an approximate block-LU decomposition.
+Data structures and routines are provided by the \texttt{PETSc} library, which allowed us to rapidly develop a software that runs on distributed-memory architectures.
 
 As expected with the projection method, the iterative Poisson solver is the bottleneck in our simulations.
 This is even worse for the IBM we use where the modified Poisson operator becomes larger and possesses more off-diagonal entries.
