@@ -53,7 +53,12 @@ Washington, DC, 20052, United-States}
 
 
 \begin{abstract}
-We develop an open-source \texttt{PETSc}-based immersed boundary method code using a fully discrete projection formulation. We accelerate the time to solution using the Nvidia-library \texttt{AmgX} on multi CUDA-capable GPU devices. We aim to use our code to study the three-dimensional flow around a  flying-snake to reveal lift-enhancement mechanisms used by this unconventional glider.
+Our open-source code \texttt{PetIBM}---an immersed boundary method with a fully discrete projection formulation---was written to take advantage of the \texttt{PETSc} library for solving the Poisson system. 
+We have now added the capacity to accelerate the time to solution on CUDA-capable GPU devices using the Nvidia library \texttt{AmgX}. 
+To provide access to \texttt{AmgX} solvers from a \texttt{PETSc}-based code, we developed a wrapper code that converts the data structures between the two libraries.
+This wrapper code could be useful to other \texttt{PETSc} applications that want to use GPUs via \texttt{AmgX}.
+Our application of interest is the three-dimensional flow around a  flying-snake,  to reveal the lift-enhancement mechanisms used by this unconventional glider.
+We are developing capability to study this problem in Microsoft Azure cloud services.
 \end{abstract}
 
 \begin{keyword}
