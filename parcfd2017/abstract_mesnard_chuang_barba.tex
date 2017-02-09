@@ -53,7 +53,7 @@ Washington, DC, 20052, United-States}
 
 
 \begin{abstract}
-We develop an open-source \texttt{PETSc}-based immersed boundary method code using a fully discrete projection formulation. We accelerate the time to solution using the Nvidia-library \texttt{AmgX} to iterative solve the systems on multi CUDA-capable GPU devices. We aim to use our code to study the three-dimensional flow around a  flying-snake to reveal lift-enhancement mechanisms used by this unconventional glider.
+We develop an open-source \texttt{PETSc}-based immersed boundary method code using a fully discrete projection formulation. We accelerate the time to solution using the Nvidia-library \texttt{AmgX} on multi CUDA-capable GPU devices. We aim to use our code to study the three-dimensional flow around a  flying-snake to reveal lift-enhancement mechanisms used by this unconventional glider.
 \end{abstract}
 
 \begin{keyword}
@@ -66,30 +66,38 @@ Immersed Boundary Method\sep \texttt{PETSc}\sep \texttt{AmgX} \sep flying snake
 
 \section{PetIBM and AmgXWrapper}
 
-We have developed \texttt{PetIBM} that implements using the \texttt{PETSc} \cite{PETSc_webpage_2016} library, an immersed-boundary method (IBM) \cite{Taira_Colonius_2007} in which the fully discrete algebraic system is solved via a projection method based on an approximate block-LU decomposition.
+We have developed \texttt{PetIBM}\footnote{\texttt{PetIBM}: https://github.com/barbagroup/PetIBM} that implements using the \texttt{PETSc}\footnote{\texttt{PETSc}: https://www.mcs.anl.gov/petsc} library, an immersed-boundary method (IBM) \cite{Taira_Colonius_2007} in which the fully discrete algebraic system is solved via a projection method based on an approximate block-LU decomposition.
 The data structures and routines provided by the \texttt{PETSc} library allowed us to rapidly develop a software that runs on distributed-memory architectures.
 
 As expected with the projection method, the iterative Poisson solver is the bottleneck in our simulations.
-This is even worse for the IBM we use where the modified Poisson operator becomes larger and possesses off-diagonal entries.
-To overcome this challenge, we use the Nvidia-library \texttt{AmgX} \cite{Nvidia_AmgX} to solve the iterative system on multiple CUDA-capable GPU devices.
-We have developed an \texttt{AmgX} wrapper \cite{AmgXWrapper} that provides the interface with the PETSc library and incorporated it in \texttt{PetIBM}.
+This is even worse for the IBM we use where the modified Poisson operator becomes larger and possesses more off-diagonal entries.
+To overcome this challenge, we use the Nvidia-library \texttt{AmgX}\footnote{\texttt{AmgX}: https://developer.nvidia.com/amgx} to solve the iterative system on multiple CUDA-capable GPU devices.
+We have developed an \texttt{AmgX} wrapper\footnote{\texttt{AmgXWrapper}: https://github.com/barbagroup/AmgXWrapper} that provides the interface with the PETSc library and incorporated it in \texttt{PetIBM}.
+Past two-dimensional simulations with \texttt{PetIBM} showed a 21 times application speed-up in runtime from using our \texttt{AmgX} wrapper on one GPU node compared to using \texttt{PETsc} on a CPU node (see Figure \ref{flying_snake_performances}).
 
 The full codes, \texttt{PetIBM} and \texttt{AmgXWrapper}, are open-source, released under MIT license, and version-controlled on GitHub.
 
 
-\section{Flying snakes in the cloud}
+\section{Flying snakes to the cloud}
 
 We aim to study the aerodynamics of the \textit{Chrysopelea paradisi}, a species of snake with the amazing capability to glide through the air.
 Previous experimental work \cite{Holden_et_al_2014} and two-dimensional simulations \cite{Krishnan_et_al_2014} reported enhanced lift force on a snake gliding at a particular angle of attack of $35^o$.
-Using \texttt{PetIBM}, we now intend to understand the three-dimensional wake structures responsible for high gliding performances of the paradise tree snake.
+Using \texttt{PetIBM} and \texttt{AmgXWrapper}, we now intend to understand the three-dimensional wake structures responsible for high gliding performances of the paradise tree snake.
 
 Finally, we decided to use the public cloud Microsoft Azure to run our simulations so that we could compare the performances with our University HPC cluster.
 
+% \begin{figure}[h!]
+% \centering
+% \includegraphics[width=5cm]{images/flying_snake_petibm.png}
+% \caption{Vorticity structures in the wake of an infinitely long cylinder with a cross-section of the \textit{Chrysopelea paradisi}.}
+% \label{flying_snake_petibm}
+% \end{figure}
+
 \begin{figure}[h!]
 \centering
-\includegraphics[width=5cm]{images/flying_snake_petibm.png}
-\caption{Vorticity structures in the wake of an infinitely long cylinder with a cross-section of the \textit{Chrysopelea paradisi}.}
-\label{flying_snake_petibm}
+\includegraphics[width=12cm]{images/flying_snake_performances.png}
+\caption{Runtimes for the flying-snake case, using \texttt{PetIBM} and \texttt{AmgX}.}
+\label{flying_snake_performances}
 \end{figure}
 
 \section*{References}
