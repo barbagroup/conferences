@@ -1,4 +1,4 @@
-\documentclass[review]{elsarticle}
+\documentclass[preprint, 1p]{elsarticle}
 
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
@@ -79,6 +79,7 @@ As expected with the projection method, the iterative Poisson solver is the bott
 This is even worse for the IBM we use where the modified Poisson operator becomes larger and possesses more off-diagonal entries.
 To overcome this challenge, we use the Nvidia-library \texttt{AmgX}\footnote{\texttt{AmgX}: https://developer.nvidia.com/amgx} to solve the iterative system on multiple CUDA-capable GPU devices.
 We have developed an \texttt{AmgX} wrapper\footnote{\texttt{AmgXWrapper}: https://github.com/barbagroup/AmgXWrapper} that provides the interface with the PETSc library and incorporated it in \texttt{PetIBM}.
+Note that this wrapper can used for other \texttt{PETSc} application codes.
 Past two-dimensional simulations with \texttt{PetIBM} showed a 21 times application speed-up in runtime from using our \texttt{AmgX} wrapper on one GPU node compared to using \texttt{PETsc} on a CPU node (see Figure \ref{flying_snake_performances}).
 
 The full codes, \texttt{PetIBM} and \texttt{AmgXWrapper}, are open-source, released under MIT license, and version-controlled on GitHub.
@@ -106,7 +107,6 @@ Finally, we decided to use the public cloud Microsoft Azure to run our simulatio
 \label{flying_snake_performances}
 \end{figure}
 
-\section*{References}
 
 \bibliography{references}
 
