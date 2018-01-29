@@ -5,6 +5,15 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+\usepackage[
+    pdftex,
+    pdftitle={Mesnard and Barba, 2018},
+    pdfpagemode={UseOutlines},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    colorlinks, linkcolor={black},citecolor={black},urlcolor={black}
+    ]{hyperref}
+
+
 \title{THREE-DIMENSIONAL FLOW SIMULATIONS OF THE FLYING SNAKE USING MICROSOFT AZURE}
 
 \author{OLIVIER MESNARD$^{*}$ AND LORENA A. BARBA$^{*}$}
@@ -16,36 +25,35 @@ The George Washington University\\
 800 22nd St NW, Washington, DC 20052, United-States\\
 e-mail: maeng@gwu.edu, web page: https://www.mae.seas.gwu.edu}
 
-\keywords{Microsoft Azure, Flying snake, PETSc, AmgX}
+\keywords{Microsoft Azure, CFD, aerodynamics, flying snake, PETSc, AmgX, cloud computing}
 
-\abstract{We use our PETSc-based immersed-boundary method code PetIBM to perform three-dimensional flow simulations of the flying snake on the public cloud platform Microsoft Azure.
+\abstract{We ran simulations of the three-dimensional flow around an anatomically correct body section of a flying snake, using our PETSc-based immersed-boundary method code PetIBM on the public cloud platform Microsoft Azure.
 The simulations ran on NC24r instances using Azure Batch service and Batch Shipyard, solving the Poisson system on multiple GPU devices with Nvidia AmgX library.}
 
 \begin{document}
 %\maketitle
 
-We have developed PetIBM\footnote{PetIBM: https://github.com/barbagroup/PetIBM}, a PETSc-based open-source code that solves the Navier-Stokes equations with a fully discrete projection method and various immersed-boundary techniques.
-In the present work, we use a decoupled immersed-boundary projection method\cite{Li_et_al_2016} that requires to solve iteratively a Poisson system every time step.
-To accelerate the time to solution, we use Nvidia AmgX library\footnote{Nvidia AmgX: https://github.com/NVIDIA/AMGX} to solve the Poisson system on multiple CUDA-capable GPU devices.
-The interface between PETSc and AmgX is handled with our in-house wrapper, AmgXWrapper\cite{AmgXWrapper}.\\
+PetIBM,\footnote{\url{https://github.com/barbagroup/PetIBM}} is a PETSc-based open-source code that solves the Navier-Stokes equations with a fully discrete projection method and various immersed-boundary techniques.
+Here, we use a decoupled immersed-boundary projection method \cite{Li_et_al_2016}, requiring a Poisson-system solution every time step.
+We solve the systems on multiple CUDA-capable GPU devices using the Nvidia AmgX library,\footnote{\url{https://github.com/NVIDIA/AMGX}} interfacing with PETSc via AmgXWrapper \cite{AmgXWrapper}.
 
-Using PetIBM, we investigate the aerodynamics of the \textit{Chrysopelea paradisi}, a species of arboreal snake capable to jump and glide in the air.
-Previous experimental work \cite{Holden_et_al_2014} and two-dimensional simulations\cite{Krishnan_et_al_2014, Mesnard_Barba_2017} have reported lift-force enhancement when the glider forms a $35$-degree angle of attack.
-We now study the flow around a three-dimensional model, a cylinder with an anatomically accurate cross-section of the gliding snake, at Reynolds number $2000$ and for the particular $35$-degree angle of attack on a structured Cartesian mesh with $233$ million cells.\\
+We are studying the aerodynamics of \textit{Chrysopelea paradisi}, a species of arboreal snake capable of jumping from tree branches and gliding in the air.
+Previous experimental work \cite{Holden_et_al_2014} and two-dimensional simulations \cite{Krishnan_et_al_2014, Mesnard_Barba_2017} found lift enhancement when the glider cross-section forms a $35$-degree angle of attack.
+We present new results of the 3D flow around a cylindrical model with anatomically accurate cross-section, at Reynolds number $2000$ and $35$-degree angle of attack, on a  $233$-million-cell structured Cartesian mesh.
 
-Thanks to a Microsoft Azure sponsorship, we use the cloud platform to run container-based multi-instance tasks for our PetIBM application of the flying snake on NC24r instances (featuring Nvidia K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
-We created the compute pool with Azure Batch, a platform service for running HPC applications in the cloud that relieves the user from manually managing a cluster and tasks scheduling.
-Finally, we used Batch Shipyard\footnote{Batch Shipyard: https://github.com/Azure/batch-shipyard}, an open-source software, to provision and execute container-based tasks on Azure Batch nodes.
-Over 2017, we spent about \$18,500 out of the \$20,000 available with the sponsorship, being charged for virtual machines, networking, data management, and storage.
-On a 233-million cells mesh, we computed about 75 non-dimensional time-units of flow simulation using 6 NC24r nodes for 24 days at a cost of \$9,511 (with 99\% of the cost incurred by the virtual machines).
-We see Microsoft Azure as a suitable alternative to traditional University HPC clusters to rapidly run CFD applications in a cost-efficient manner.
+Thanks to a Microsoft Azure sponsorship, we ran container-based multi-instance tasks for our PetIBM application on NC24r instances (featuring Nvidia K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
+We created the compute pool with Azure Batch, a platform service for running HPC applications in the cloud that relieves the user from manually managing a cluster and task scheduling.
+We also used Batch Shipyard,\footnote{\url{https://github.com/Azure/batch-shipyard}} an open-source software to provision and execute container-based tasks on Azure Batch nodes.
+The charges for virtual machines, networking, data management, and storage during 2017 added to about \$18,500 of the sponsored account.
+On the 233-million-cell mesh, we computed about 75 non-dimensional time units of flow simulation using 6 NC24r nodes for 24 days, at a cost of \$9,511 (with 99\% of the cost incurred by the virtual machines).
+We see Microsoft Azure as a suitable alternative to traditional university HPC clusters to rapidly run CFD applications in a cost-efficient manner.
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=12cm]{figures/latencyBandwidthColonialOneAzure.png}
 \includegraphics[width=8cm]{figures/wz_wx_wake3d_2k35_meshB_0026.png}
-\caption{Top: Point-to-point latency (left) and bandwidth (right) tests performed on a compute pool of two NC24r Azure instances compared with results obtained on our University HPC cluster Colonial One.
-Bottom: Streamwise and spanwise vorticity contours after 141.2 time units of flow simulation for the snake cylinder at Reynolds number $2000$ and angle of attack $35^o$ on a 233-million cells grid.}
+\caption{Top: Point-to-point latency (left) and bandwidth (right) tests performed on a compute pool of two NC24r Azure instances compared with results obtained on our university HPC cluster, Colonial One.
+Bottom: Streamwise and spanwise vorticity contours after 141.2 time units of flow simulation for the snake cylinder at Reynolds number $2000$ and angle of attack $35^o$ on a 233-million-cell grid.}
 \label{latency_bandwidth_wz_wx}
 \end{figure}
 
