@@ -39,14 +39,16 @@ We solve the systems on multiple CUDA-capable GPU devices using the Nvidia AmgX 
 
 We are studying the aerodynamics of \textit{Chrysopelea paradisi}, a species of arboreal snake capable of jumping from tree branches and gliding in the air.
 Previous experimental work \cite{Holden_et_al_2014} and two-dimensional simulations \cite{Krishnan_et_al_2014, Mesnard_Barba_2017} found lift enhancement when the glider cross-section forms a $35$-degree angle of attack.
-We present new results of the 3D flow around a cylindrical model with anatomically accurate cross-section, at Reynolds number $2000$ and $35$-degree angle of attack, on a  $233$-million-cell structured Cartesian mesh.
+We present new results of the 3D flow around a cylindrical model with anatomically accurate cross-section, at Reynolds number $2000$ and $35$-degree angle of attack, on a  $233$-million-cell structured Cartesian mesh (see Figure 1, bottom).
 
 Thanks to a Microsoft Azure sponsorship, we ran container-based multi-instance tasks for our PetIBM application on NC24r instances (featuring Nvidia K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
 We created the compute pool with Azure Batch, a platform service for running HPC applications in the cloud that relieves the user from manually managing a cluster and task scheduling.
 We also used Batch Shipyard,\footnote{\url{https://github.com/Azure/batch-shipyard}} an open-source software to provision and execute container-based tasks on Azure Batch nodes.
 The charges for virtual machines, networking, data management, and storage during 2017 added to about \$18,500 of the sponsored account.
 On the 233-million-cell mesh, we computed about 75 non-dimensional time units of flow simulation using 6 NC24r nodes for 24 days, at a cost of \$9,511 (with 99\% of the cost incurred by the virtual machines).
-We see Microsoft Azure as a suitable alternative to traditional university HPC clusters to rapidly run CFD applications in a cost-efficient manner.
+We think Microsoft Azure could be a suitable alternative to traditional university HPC clusters to run CFD applications.
+Parallel performance compares well (see Figure 1, top).
+Based on our experience in the past year, we plan to present our analysis of the cost and other factors that may affect the decision of adopting cloud for CFD.
 
 \begin{figure}[!h]
 \centering
