@@ -36,12 +36,14 @@ We now study the flow around a three-dimensional model, a cylinder with an anato
 Thanks to a Microsoft Azure sponsorship, we use the cloud platform to run container-based multi-instance tasks for our PetIBM application of the flying snake on NC24r instances (featuring Nvidia K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
 We created the compute pool with Azure Batch, a platform service for running HPC applications in the cloud that relieves the user from manually managing a cluster and tasks scheduling.
 Finally, we used Batch Shipyard\footnote{Batch Shipyard: https://github.com/Azure/batch-shipyard}, an open-source software, to provision and execute container-based tasks on Azure Batch nodes.
-We see Microsoft Azure as a suitable alternative to traditional University HPC clusters to rapidly develop CFD applications in a cost-efficient manner.
+Over 2017, we spent about \$18,500 out of the \$20,000 available with the sponsorship, being charged for virtual machines, networking, data management, and storage.
+On a 233-million cells mesh, we computed about 75 non-dimensional time-units of flow simulation using 6 NC24r nodes for 24 days at a cost of \$9,511 (with 99\% of the cost incurred by the virtual machines).
+We see Microsoft Azure as a suitable alternative to traditional University HPC clusters to rapidly run CFD applications in a cost-efficient manner.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=14cm]{figures/latencyBandwidthColonialOneAzure.png}
-\includegraphics[width=11cm]{figures/wz_wx_wake3d_2k35_meshB_0026.png}
+\includegraphics[width=12cm]{figures/latencyBandwidthColonialOneAzure.png}
+\includegraphics[width=8cm]{figures/wz_wx_wake3d_2k35_meshB_0026.png}
 \caption{Top: Point-to-point latency (left) and bandwidth (right) tests performed on a compute pool of two NC24r Azure instances compared with results obtained on our University HPC cluster Colonial One.
 Bottom: Streamwise and spanwise vorticity contours after 141.2 time units of flow simulation for the snake cylinder at Reynolds number $2000$ and angle of attack $35^o$ on a 233-million cells grid.}
 \label{latency_bandwidth_wz_wx}
