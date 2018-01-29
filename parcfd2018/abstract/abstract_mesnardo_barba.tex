@@ -28,20 +28,20 @@ e-mail: maeng@gwu.edu, web page: https://www.mae.seas.gwu.edu}
 \keywords{Microsoft Azure, CFD, Aerodynamics, Flying snake, PETSc, AmgX, Cloud computing}
 
 \abstract{We ran simulations of the three-dimensional flow around an anatomically correct body section of a flying snake, using our PETSc-based immersed-boundary method code PetIBM on the public cloud platform Microsoft Azure.
-The simulations ran on NC24r instances using Azure Batch service and Batch Shipyard, solving the Poisson system on multiple GPU devices with Nvidia AmgX library.}
+The simulations ran on NC24r instances using Azure Batch service and Batch Shipyard, solving the Poisson system on multiple GPU devices with NVIDIA AmgX library.}
 
 \begin{document}
 %\maketitle
 
 PetIBM,\footnote{\url{https://github.com/barbagroup/PetIBM}} is a PETSc-based open-source code that solves the Navier-Stokes equations with a fully discrete projection method and various immersed-boundary techniques.
 Here, we use a decoupled immersed-boundary projection method \cite{Li_et_al_2016}, requiring a Poisson-system solution every time step.
-We solve the systems on multiple CUDA-capable GPU devices using the Nvidia AmgX library,\footnote{\url{https://github.com/NVIDIA/AMGX}} interfacing with PETSc via AmgXWrapper \cite{AmgXWrapper}.
+We solve the systems on multiple CUDA-capable GPU devices using the NVIDIA AmgX library,\footnote{\url{https://github.com/NVIDIA/AMGX}} interfacing with PETSc via AmgXWrapper \cite{AmgXWrapper}.
 
 We are studying the aerodynamics of \textit{Chrysopelea paradisi}, a species of arboreal snake capable of jumping from tree branches and gliding in the air.
 Previous experimental work \cite{Holden_et_al_2014} and two-dimensional simulations \cite{Krishnan_et_al_2014, Mesnard_Barba_2017} found lift enhancement when the glider cross-section forms a $35$-degree angle of attack.
 We present new results of the 3D flow around a cylindrical model with anatomically accurate cross-section, at Reynolds number $2000$ and $35$-degree angle of attack, on a  $233$-million-cell structured Cartesian mesh (see Figure 1, bottom).
 
-Thanks to a Microsoft Azure sponsorship, we ran container-based multi-instance tasks for our PetIBM application on NC24r instances (featuring Nvidia K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
+Thanks to a Microsoft Azure sponsorship, we ran container-based multi-instance tasks for our PetIBM application on NC24r instances (featuring NVIDIA K80 GPU devices) with Azure Linux virtual machines and over the Infiniband/RDMA network.
 We created the compute pool with Azure Batch, a platform service for running HPC applications in the cloud that relieves the user from manually managing a cluster and task scheduling.
 We also used Batch Shipyard,\footnote{\url{https://github.com/Azure/batch-shipyard}} an open-source software to provision and execute container-based tasks on Azure Batch nodes.
 The charges for virtual machines, networking, data management, and storage during 2017 added to about \$18,500 of the sponsored account.
