@@ -14,7 +14,11 @@ Additional information on tutorial submissions may be found at https://www.scipy
 
 *Short summary* 
 > The summary should be less than 100 words and should be suitable to be used as a description in the online program.
-Linear algebra is 
+
+Linear algebra is the foundational mathematical subject that everyone needs to know today. Get lost, calculus!
+Conventional presentations of linear algebra in undergraduate STEM curricula are overly focused on rules and memorization, overloaded with nomenclature, and slowed down by pen-and-paper methods.
+This tutorial skips the rule-based procedures and instead uses a visualization-rich approachto and computation with NumPy to illuminate the concepts and usefulness of linear algebra.
+We promise a launching pad for participants to venture into this subject and continue learning after, with a solid conceptual grasp and none of the slog. 
 
 *Detailed description of the tutorial*
 > Include a detailed outline for reviewers including the duration of each part and exercise sessions. It should also include the target audience, expected level of knowledge prior to the class and the goals of the class. This description is used by the reviewers to evaluate your submission. If you decide to attach extra documentation below (under Paper), please mention it in the outline.
