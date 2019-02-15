@@ -19,7 +19,7 @@ and an equivalent Jupyter-based workflow, while Jupyter notebooks also serve as 
 Pipeline operators are required by law to assess the risk of pipe ruptures over areas where spills of hazardous liquids can have consequences to health and safety or the environment.
 Current analysis methods for overland hydrocarbon flow represent the flow with 1D kinematic-wave approximation, even though the analysis results usually deviate from reality, due to cost constraints.
 Pipeline segments may contain tens or hundreds of potential rupture points that require analysis.  
-Thus, high-fidelity analysis is not used in the risk-assessment community because of both modeling complexity and the high computating power it demands. 
+Thus, high-fidelity analysis is not used in the risk-assessment community because of both modeling complexity and the high computing power it demands. 
 Given recent advances in cloud computing, we believe this type of analysis could now move on to more sophisticated modeling and exploit the power of cloud nodes. 
 Open-source numerical solvers for this type of analysis are not available or have not been adapted to this application. 
 In this work, we present new developments built on the open-source GeoClaw software for high-fidelity modeling of overland hydrocarbon flows, and a Python workflow for running the analysis on Microsoft Azure nodes.
@@ -46,7 +46,7 @@ Alternatively, for non-ArcGIS users, we have an equivalent workflow using Jupyte
 
 In this presentation, we will describe the modifications we made to the GeoClaw software and the concept of our Microsoft Azure workflow. 
 We will also share some technical problems encountered during the development so that audiences can save time when having similar issues in the future. 
-The talk will aslos showcase the usage of the GUI of ArcGIS Pro Python toolbox, Jupyter Notebook adaptation, and model simulation results.
+The talk will also showcase the usage of the GUI of ArcGIS Pro Python toolbox, Jupyter Notebook adaptation, and model simulation results.
 
 ## Complementary data
 
