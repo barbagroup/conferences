@@ -26,7 +26,7 @@ You don't need previous experience in the subject; some recollection of having l
 
 The target audience is anyone with an interest in getting a practical entry point to one of the most important mathematical subjects underpinning data science and AI. Whether or not the participant took an undergraduate linear algebra course, this tutorial will demystify the core ideas and give overall intuition that is routinely missing from traditional teaching of this subject. The tutorial assumes only a minimal recollection of having seen matrices or linear systems of equations as a student.
 
-The goal of this tutorial is to accelerate through from vague ideas of what are a vector and a matrix, to mastering the essential concepts and the power of linear algebra in modern applications.
+The goal of this tutorial is to accelerate through from the participants' vague ideas of what a vector and a matrix are, to new clarity about these objects, and to mastering the essential concepts and the power of linear algebra in modern applications.
 The tutorial is organized in five lessons, each a Jupyter notebook. It will use NumPy and Matplotlib, but requires only beginner level at both. The only additional dependency is a helper script that we provide for creating certain custom plots. The materials are being developed on GitHub at:
 https://github.com/engineersCode/EngComp4_landlinear
 
