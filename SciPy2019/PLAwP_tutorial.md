@@ -31,7 +31,7 @@ The five lessons of this learning module are a follows:
 
 1. What is a vector? The physicist's view versus the computer scientist's view. Fundamental vector operations: visualizing vector addition and multiplication by a scalar. Intuitive presentation of basis vectors, linear combination and span. What is a matrix? A matrix as a linear transformation mapping a vector in one space, to another space. Visualizing linear transformations. Matrix-vector multiplication: a linear combination of the matrix columns. Some special transformations: rotation, shear, scaling. Matrix-matrix multiplication: a composition of two linear transformations. Idea of inverse of a matrix as a transformation that takes vectors back to where they came from.
 
-2. 
+2. Matrix-vector multiplication: (lhs of) a linear system of equation. Idea of solving for unknown vector in a linear system is equivalent to finding the input vector given the transformation matrix its transformed vector (rhs vector). Visualize 3d linear transformations. What is rank of a matrix: the dimensionality of the space spanned by the transformed vectors. Visualize the transformations of rank-deficient matrices.
 
 3. Matrix-vector multiplication: change of basis. A matrix converts a vector's coordinates from one coordinate system to another. Visualizing the same vector before and after applying the change of basis. An inverse of that matrix will change the vector's coordinates back to original basis. Differentiate the interpretation of linear transformation with the interpretation of changing basis: the former means a matrix transforms a vector to a new vector under the same basis, the latter means a matrix can express the same vector's coordinates in a new coordinate system (basis).
  
