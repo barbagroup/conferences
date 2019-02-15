@@ -31,22 +31,22 @@ As the core of GeoClaw is written in Fortran, we wrapped the modified GeoClaw so
 This interface is used to control the simulation workflow on a local machine. 
 It automatically downloads topography rasters and hydrological features from USGS (United States Geological Survey) REST endpoints, converts input data, and also performs post-processing of the results.
 
-The modified GeoClaw and the Python calling interface are then together packaged into a Docker image. 
+The modified GeoClaw software and the new Python calling interface were packaged into a Docker image. 
 We further use Python to deploy the Docker containers to Microsoft Azure clusters. 
 With the Python tools, we can create Microsoft Azure clusters and resources specific to GeoClaw's needs and submit simulations to cloud clusters from local machines. 
-The tools can monitor the clusters and simulations. 
+The tools can also monitor the clusters and simulations. 
 Auto-resizing of the clusters and auto-downloading of the completed cases happen during the monitoring. 
-Once the tasks in the task scheduler are all done, the Python tools delete all cloud resources. 
-The whole workflow is designed for the use case when there are a bunch of potential rupture points along a pipeline segment.
+Once the tasks in the task scheduler are all complete, the Python tools delete all cloud resources. 
+The whole workflow is designed for the use case when there are many potential rupture points along a pipeline segment.
 
-We additionally develop a Python toolbox for ArcGIS Pro. 
-The Python toolbox provides not only an interface to GeoCalw but also an interface to Microsoft Azure. 
+Additionally, we developed a Python toolbox for ArcGIS Pro. 
+The Python toolbox provides not only an interface to GeoClaw but also an interface to Microsoft Azure. 
 ArcGIS users can prepare simulation cases and interact with Azure in ArcGIS Pro. 
-Alternatively, for non-ArcGIS users, Jupyter Notebook can carry out the same workflow and also serves as auto-generated reports.
+Alternatively, for non-ArcGIS users, we have an equivalent workflow using Jupyter that also auto-generates reports as Jupyter notebooks.
 
-In this presentation, we will introduce the modifications we made in GeoClaw and the concept of our Microsoft Azure workflow. 
+In this presentation, we will describe the modifications we made to the GeoClaw software and the concept of our Microsoft Azure workflow. 
 We will also share some technical problems encountered during the development so that audiences can save time when having similar issues in the future. 
-Showcases include the usage of the GUI of ArcGIS Pro Python toolbox, Jupyter Notebook adaptation, and some simulation results.
+The talk will aslos showcase the usage of the GUI of ArcGIS Pro Python toolbox, Jupyter Notebook adaptation, and model simulation results.
 
 ## Complementary data
 
