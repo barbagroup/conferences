@@ -49,3 +49,7 @@ The hands-on task in this notebook is to draw the linear transformation of a sym
 5. This notebook will cover the geometrical interpretation of singular value decomposition (SVD). While eigendecomposition is a combination of change of basis and stretching, SVD is a combination of rotation and stretching, which can be treated as a generalization of eigendecomposition.
 
 We will add an example of how to use SVD in image compression. A 2d image can be represented as an array where each pixel is an element of the array. By applying SVD and dropping smaller singular values, we can reconstruct the original image at a lower computational and memory cost.
+
+---
+In the supplementary materials, we attach a PDF of lesson 1, with all the output. We are currently developing the lessons on GitHub, but not pushing the output (to keep a cleaner history).
+We invite the reviewers to clone the repository and run the notebooks to see the rich visual output.
