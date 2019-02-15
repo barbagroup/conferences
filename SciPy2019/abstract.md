@@ -41,10 +41,10 @@ In this presentation, we will introduce the modifications we made in GeoClaw and
 We will also share some technical problems encountered during the development so that audiences can save time when having similar issues in the future. 
 Showcases include the usage of the GUI of ArcGIS Pro Python toolbox, Jupyter Notebook adaptation, and some simulation results.
 
-## Reference and complementart data
+## Complementary data
 
-[1] GeoClaw, http://www.clawpack.org/geoclaw.html
-[2] GeoClaw for overland simulation, https://github.com/barbagroup/geoclaw
-[3] geoclaw-landspill-cases, https://github.com/barbagroup/geoclaw-landspill-cases
-[4] geoclaw-azure-launcher, https://github.com/barbagroup/geoclaw-azure-launcher
+1. GeoClaw, http://www.clawpack.org/geoclaw.html
+2. GeoClaw for overland simulation, https://github.com/barbagroup/geoclaw
+3. geoclaw-landspill-cases, https://github.com/barbagroup/geoclaw-landspill-cases
+4. geoclaw-azure-launcher, https://github.com/barbagroup/geoclaw-azure-launcher
 
