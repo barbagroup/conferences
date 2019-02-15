@@ -24,12 +24,12 @@ Given recent advances in cloud computing, we believe this type of analysis could
 Open-source numerical solvers for this type of analysis are not available or have not been adapted to this application. 
 In this work, we present new developments built on the open-source GeoClaw software for high-fidelity modeling of overland hydrocarbon flows, and a Python workflow for running the analysis on Microsoft Azure nodes.
 
-GeoClaw, initially designed for tsunami simulations, solves 2D full shallow-water equations (SWE) on complex topography and is under a public license (BSD 3-Clause). 
-GeoClaw utilizes OpenMP parallelization and adaptive mesh refinement (AMR) techniques to accelerate simulations. 
-To perform HCA analysis with GeoClaw, we expand GeoClaw's capabilities with the Darcy-Weisbach friction models, in-land hydrological features, evaporation models, and the capability of handling pipeline rupture points. 
-While the core code of GeoClaw is in Fortran, we wrap the modified GeoClaw solver with a Python calling interface. 
-The Python interface controls the simulation workflow on a local machine. 
-It automatically downloads topography rasters and hydrological features from USGS (United States Geological Survey) REST endpoints, converts input data, and then performs post-processing.
+GeoClaw, initially designed for tsunami simulations, solves the 2D full shallow-water equations (SWE) on complex topography and is under a public license (BSD 3-Clause). 
+It is parallelized with OpenMP and uses adaptive mesh refinement (AMR) techniques to accelerate the simulations. 
+We expanded GeoClaw's capabilities to use it for overland flow of hydrocarbons, adding Darcy-Weisbach friction models, in-land hydrological features, evaporation models, and the capability of handling pipeline rupture points. 
+As the core of GeoClaw is written in Fortran, we wrapped the modified GeoClaw solver with a Python calling interface. 
+This interface is used to control the simulation workflow on a local machine. 
+It automatically downloads topography rasters and hydrological features from USGS (United States Geological Survey) REST endpoints, converts input data, and also performs post-processing of the results.
 
 The modified GeoClaw and the Python calling interface are then together packaged into a Docker image. 
 We further use Python to deploy the Docker containers to Microsoft Azure clusters. 
