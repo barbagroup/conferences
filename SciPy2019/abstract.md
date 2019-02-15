@@ -16,13 +16,13 @@ and an equivalent Jupyter-based workflow, while Jupyter notebooks also serve as 
 
 ## Abstract
 
-Title 49 CFR §195.452 requires overland hydrocarbon flow analysis for hazardous liquid pipelines in High Consequence Area (HCA). 
-Open-source numerical solvers for high-fidelity HCA analysis, however, are not widely available nor used in the risk assessment community. 
-A significant reason is a high demand for computing power due to the complexity of modeling. 
-When it comes to HCA analysis, a pipeline segment may contain tens or hundreds of potential rupture points that requires analysis. 
-Therefore the mainstream of HCA analysis nowadays still models the overland hydrocarbon flow with 1D kinematic-wave approximation to speed-up the analysis, though the analysis results usually deviate from reality. 
-Given the advance in cloud computing, we believe the HCA analysis should now move on to a more sophisticated model and exploit the power of cloud computing. 
-In this work, we present new GeoClaw development that serves such purpose and a Python workflow for Microsoft Azure.
+Pipeline operators are required by law to assess the risk of pipe ruptures over areas where spills of hazardous liquids can have consequences to health and safety or the environment.
+Current analysis methods for overland hydrocarbon flow represent the flow with 1D kinematic-wave approximation, even though the analysis results usually deviate from reality, due to cost constraints.
+Pipeline segments may contain tens or hundreds of potential rupture points that requires analysis.  
+High-fidelity analysis methods are not used in the risk-assessment community due to the modeling complexity and the high computating power it demands. 
+Given recent advances in cloud computing, we believe this type of analysis could now move on to a more sophisticated model and exploit the power of cloud computing. 
+Open-source numerical solvers for this type of analysis are not available or have not been adapted to this application. 
+In this work, we present new developments built on the open-source GeoClaw software for high-fidelity modelin of overland hydrocarbon flows, and a Python workflow for running the analysis on Microsoft Azure nodes.
 
 GeoClaw, initially designed for tsunami simulations, solves 2D full shallow-water equations (SWE) on complex topography and is under a public license (BSD 3-Clause). 
 GeoClaw utilizes OpenMP parallelization and adaptive mesh refinement (AMR) techniques to accelerate simulations. 
