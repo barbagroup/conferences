@@ -3,16 +3,16 @@ Abstract
 
 ## Title
 
-High-fidelity overland hydrocarbon HCA analysis with GeoClaw and cloud computing
+Python workflow for high-fidelity modeling of overland hydrocarbon flows with GeoClaw and cloud computing
 
 ## Short summary
 
-We expand GeoClaw for high-fidelity simulations of overland hydrocarbon flows and a Python workflow for HCA analysis utilizing Microsoft Azure.
-The expansion includes rupture-point inflows, evaporation, Darcy-Weisbach friction, and in-land hydrologic features.
-The Python workflow allows automation of running and controlling simulations on Azure clusters.
-It aims at the situation when performing analysis on a massive amount of potential rupture points along a pipeline.
-We additionally develop a Python toolbox that integrates GeoClaw and Azure workflow with ArcGIS Pro.
-Also, we present that Jupyter Notebook can carry out the same workflow, while Jupyter Notebook also serves as automatic reports.
+We expanded GeoClaw, a shallow-water solver, for computing overland hydrocarbon flows, and developed a Python workflow for risk analysis of pipeline ruptures on Microsoft Azure cloud resources.
+The added functionality on GeoClaw includes rupture-point inflows, evaporation, Darcy-Weisbach friction, and in-land hydrologic features.
+The Python workflow automates running and controlling simulations on Azure clusters.
+The goal is performing analysis on hundreds or thousands of potential rupture points along a pipeline.
+We also developed a Python toolbox that integrates GeoClaw and the Azure workflow with ArcGIS Pro,
+and an equivalent Jupyter-based workflow, while Jupyter notebooks also serve as automatic reports.
 
 ## Abstract
 
