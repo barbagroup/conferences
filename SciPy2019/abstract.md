@@ -18,11 +18,11 @@ and an equivalent Jupyter-based workflow, while Jupyter notebooks also serve as 
 
 Pipeline operators are required by law to assess the risk of pipe ruptures over areas where spills of hazardous liquids can have consequences to health and safety or the environment.
 Current analysis methods for overland hydrocarbon flow represent the flow with 1D kinematic-wave approximation, even though the analysis results usually deviate from reality, due to cost constraints.
-Pipeline segments may contain tens or hundreds of potential rupture points that requires analysis.  
-High-fidelity analysis methods are not used in the risk-assessment community due to the modeling complexity and the high computating power it demands. 
-Given recent advances in cloud computing, we believe this type of analysis could now move on to a more sophisticated model and exploit the power of cloud computing. 
+Pipeline segments may contain tens or hundreds of potential rupture points that require analysis.  
+Thus, high-fidelity analysis is not used in the risk-assessment community because of both modeling complexity and the high computating power it demands. 
+Given recent advances in cloud computing, we believe this type of analysis could now move on to more sophisticated modeling and exploit the power of cloud nodes. 
 Open-source numerical solvers for this type of analysis are not available or have not been adapted to this application. 
-In this work, we present new developments built on the open-source GeoClaw software for high-fidelity modelin of overland hydrocarbon flows, and a Python workflow for running the analysis on Microsoft Azure nodes.
+In this work, we present new developments built on the open-source GeoClaw software for high-fidelity modeling of overland hydrocarbon flows, and a Python workflow for running the analysis on Microsoft Azure nodes.
 
 GeoClaw, initially designed for tsunami simulations, solves 2D full shallow-water equations (SWE) on complex topography and is under a public license (BSD 3-Clause). 
 GeoClaw utilizes OpenMP parallelization and adaptive mesh refinement (AMR) techniques to accelerate simulations. 
