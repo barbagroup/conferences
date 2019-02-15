@@ -9,19 +9,24 @@ For the submission you will need the following information:
 * If available, the tutorial notes, slides, exercise files, and IPython notebooks, even if they are preliminary.
 Additional information on tutorial submissions may be found at https://www.scipy2019.scipy.org/tutorials. Presenters will be notified on March 22nd.
 
-Title:
-“Land on Vector Spaces: Practical Linear Algebra with Python”
+# Title:
+## “Land on Vector Spaces: Practical Linear Algebra with Python”
 
-Short summary* 
-The summary should be less than 100 words and should be suitable to be used as a description in the online program.
+*Short summary* 
+> The summary should be less than 100 words and should be suitable to be used as a description in the online program.
 Linear algebra is 
 
-Detailed description of the tutorial*
-Include a detailed outline for reviewers including the duration of each part and exercise sessions. It should also include the target audience, expected level of knowledge prior to the class and the goals of the class. This description is used by the reviewers to evaluate your submission. If you decide to attach extra documentation below (under Paper), please mention it in the outline.
-Target audience: Anyone with an interest in getting a practical entry point to one of the most important mathematical subjects underpinning data science and AI. Wether or not the participant took an undergraduate linear algebra course, this tutorial will demystify the core ideas and give overall intuition that is routinely missing from traditional teaching of this subject. The tutorial assumes only a minimal recollection of having seen matrices or linear systems of equations as a student.
-The goal of this tutorial is to accelerate through from vague ideas of what are a vector and a matrix, to mastering the essential ideas and the power of linear algebra in modern applications.
-The tutorial is organized in five lessons, each a Jupyter notebook. In will use NumPy and Matplotlib, but requires only beginner level at both. The only additional dependency is a helper script that we provide for creating certain custom plots. The materials are being developed on GitHub at:
+*Detailed description of the tutorial*
+> Include a detailed outline for reviewers including the duration of each part and exercise sessions. It should also include the target audience, expected level of knowledge prior to the class and the goals of the class. This description is used by the reviewers to evaluate your submission. If you decide to attach extra documentation below (under Paper), please mention it in the outline.
+
+The target audience is anyone with an interest in getting a practical entry point to one of the most important mathematical subjects underpinning data science and AI. Whether or not the participant took an undergraduate linear algebra course, this tutorial will demystify the core ideas and give overall intuition that is routinely missing from traditional teaching of this subject. The tutorial assumes only a minimal recollection of having seen matrices or linear systems of equations as a student.
+
+The goal of this tutorial is to accelerate through from vague ideas of what are a vector and a matrix, to mastering the essential concepts and the power of linear algebra in modern applications.
+The tutorial is organized in five lessons, each a Jupyter notebook. It will use NumPy and Matplotlib, but requires only beginner level at both. The only additional dependency is a helper script that we provide for creating certain custom plots. The materials are being developed on GitHub at:
 https://github.com/engineersCode/EngComp4_landlinear
+
 We will provide a Binder button to launch an interactive session with the notebooks. Otherwise, participants are invited to clone the repository, and we will provide an `environments.yml` file.
+
 The five lessons of this learning module are a follows:
+
 1. 
